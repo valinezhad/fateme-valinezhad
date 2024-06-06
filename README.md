@@ -2,4 +2,4 @@
 
 Hi Guys
 
-*** I love pink ***
+I **love** pink
