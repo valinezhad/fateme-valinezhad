@@ -1,7 +1,151 @@
-body {
-    background-color: hotpink;
+:root {
+  --lightblue:  rgb(218, 230, 245);
+  --gray: rgb(107, 106, 106);
+--azure: rgb(240, 255, 255);
+--lightgray:rgb(211, 211, 211);
 }
 
+body {
+  margin: auto;
+}
+.header {
+  background-color: var(--lightblue);
+  padding-bottom: 100px;
+ 
+}
 h1 {
-    color: white;
+  border-bottom: 2px solid var(--gray);
+  inline-size: 70%;
+  row-gap:2px;
+
+  margin-bottom: -2px;;
+}
+li{
+  margin-bottom: 8px;
+  padding-bottom: 5px;
+}
+ul {
+  margin-bottom: 5px;
+}
+.h3 {
+  position: relative;
+
+  top: 10px;
+ 
+}
+.photo {
+  width: 170px;
+  height: 170px;
+  border-radius: 90px;
+  border: 3px solid var(--gray);
+}
+
+.cv {
+  font-size: 30px;
+  border: 1px solid var(--gray);
+  padding: 4px 50px;
+  background-color: var(--azure);
+  box-shadow: 2px 2px var(--lightgray);
+  text-align: center;
+  border-left: none;
+ width: 140px;
+
+}
+.info-paragraph {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.my-info {
+  background-color:var(--lightblue);
+  padding-bottom: 40px;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding: 20px;
+}
+.container {
+  margin: auto;
+  max-width: 1200px;
+  padding-inline: 1rem;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.education-section {
+  border-left: 2px dashed var(--gray);
+  height: 160px;
+  position: relative;
+  left: 4%;
+}
+.language-skills {
+position: relative;
+bottom: 28px;
+
+
+}
+.it-expertise {
+  position: relative;
+  bottom: 65px;
+}
+.fati {
+  border-left:2px dashed var(--gray); 
+  position: relative;
+  left:4%;
+  bottom: 9px;
+ height: 160px;
+ 
+}
+
+.left-menu > span {
+  border: 1px solid var(--gray);
+  padding: 3px;
+  margin-left: 25%;
+  padding-top: 3px;
+  border-radius: 50% 20% / 10% 40%;
+  background-color:var(--azure);
+  box-shadow: 2px 2px var(--lightgray);
+  
+}
+
+.left-menu {
+  margin-top: 20px;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+
+.footer {
+ 
+  padding: 20px;
+  background-color: var(--lightblue);
+  
+
+}
+a{
+position: relative;
+left:50%
+}
+.d-flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.gap-2 {
+  gap: 1rem;
 }
