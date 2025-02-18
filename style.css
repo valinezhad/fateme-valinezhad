@@ -8,6 +8,11 @@
 body {
   margin: auto;
 }
+.container {
+  margin: auto;
+  max-width: 1200px;
+  padding-inline: 1rem;
+}
 .header {
   background-color: var(--lightblue);
   padding-bottom: 100px;
@@ -17,30 +22,24 @@ h1 {
   border-bottom: 2px solid var(--gray);
   inline-size: 70%;
   row-gap:2px;
+  font-family: 'Space Mono', monospace;
 
   margin-bottom: -2px;;
 }
-li{
-  margin-bottom: 8px;
-  padding-bottom: 5px;
-}
-ul {
-  margin-bottom: 5px;
-}
-.h3 {
+h2 {
+  font-family: 'Space Mono', monospace;
   position: relative;
-
-  top: 10px;
- 
+  bottom: 18px;
 }
-.photo {
+.header__photo {
   width: 170px;
   height: 170px;
   border-radius: 90px;
   border: 3px solid var(--gray);
+  margin-top: 20px;
+  margin-left: 40px;
 }
-
-.cv {
+.header__cv {
   font-size: 30px;
   border: 1px solid var(--gray);
   padding: 4px 50px;
@@ -49,26 +48,24 @@ ul {
   text-align: center;
   border-left: none;
  width: 140px;
+ position: relative;
+ top: 8px;
+ 
 
 }
-.info-paragraph {
+.header__info-paragraph {
   display: flex;
   flex-direction: column;
-  font-weight: bold;
+  
   margin-left: 30px;
   margin-top: 20px;
+
 }
-.my-info {
-  background-color:var(--lightblue);
-  padding-bottom: 40px;
-  border-radius: 20px;
-  padding-top: 20px;
-  padding: 20px;
-}
-.container {
-  margin: auto;
-  max-width: 1200px;
-  padding-inline: 1rem;
+.info-paragraph__p {
+  font-family: "Space Mono", serif;
+  white-space: normal;
+  position: relative;
+  bottom: 57px;
 }
 .main {
   display: flex;
@@ -78,6 +75,70 @@ ul {
     display: flex;
     flex-direction: column;
   }
+}
+
+.main_left-menu > span {
+  border: 1px solid var(--gray);
+  padding: 3px;
+  margin-left: 30%;
+  padding-top: 3px;
+  border-radius: 50% 20% / 10% 40%;
+  background-color:var(--azure);
+  box-shadow: 2px 2px var(--lightgray);
+padding-right: 20px;
+font-family: 'Space Mono', monospace;
+  
+}
+
+.main_left-menu {
+  margin-top: 20px;
+ 
+  border-radius: 50% 20% / 10% 40%
+}
+
+.menu {
+  font-family: "Space Mono", serif;
+  
+  font-style: normal;
+}
+.main__my-info{
+  background-color:var(--lightblue);
+  padding-bottom: 40px;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding: 20px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+
+
+
+li{
+  margin-bottom: 8px;
+  padding-bottom: 5px;
+  font-family: "Space Mono", serif;
+  
+  
+  font-style: normal;
+}
+ul {
+  margin-bottom: 5px;
+}
+.h3 {
+  position: relative;
+ 
+  font-family: "Space Mono", serif;
+  
+  font-style: normal;
+  
+
+  top: 10px;
+ 
 }
 
 .education-section {
@@ -96,47 +157,49 @@ bottom: 28px;
   position: relative;
   bottom: 65px;
 }
-.fati {
+
+.language-skills > ul, .it-expertise > ul {
   border-left:2px dashed var(--gray); 
   position: relative;
   left:4%;
   bottom: 9px;
  height: 160px;
- 
+}
+.more-info {
+  display: none;
 }
 
-.left-menu > span {
-  border: 1px solid var(--gray);
-  padding: 3px;
-  margin-left: 25%;
-  padding-top: 3px;
-  border-radius: 50% 20% / 10% 40%;
-  background-color:var(--azure);
-  box-shadow: 2px 2px var(--lightgray);
-  
-}
-
-.left-menu {
-  margin-top: 20px;
-}
-.icon {
-  width: 20px;
-  height: 20px;
-  padding-top: 20px;
-  padding-left: 5px;
-}
 
 .footer {
  
   padding: 20px;
   background-color: var(--lightblue);
-  
-
 }
 a{
 position: relative;
-left:50%
+left:50%;
+
 }
+.my_info__button {
+ text-align: center;
+
+  font-family: "Space Mono", serif;
+border-radius: 10px 10px;
+  background-color:var(--azure);
+  font-style: normal;
+  margin-left: 30%;
+  padding: 6px;
+  
+  
+}
+.dot {
+  height: 8px;
+  width: 10px;
+  background-color: black;
+  display: inline-block;
+}
+
+
 .d-flex {
   display: flex;
 }
@@ -148,4 +211,54 @@ left:50%
 }
 .gap-2 {
   gap: 1rem;
+
 }
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top:8px;
+  right:4px;
+  padding: 4px;
+  border: var(--gray) solid 1px;
+  background: var(--azure);
+  cursor: pointer;
+}
+
+.hamburger> .closeIcon {
+  display: none;
+}
+.right-menu {
+  position: fixed;
+  transition: transform 0.2s;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;;
+  transform: translateY(-100%);
+  list-style: none;
+  
+  }
+  .right-menu a{
+   color: black;
+   
+    
+  }
+   a:hover {
+    background-color: azure;
+    border-radius: 8px;
+  }
+  .right-menu li {
+    display: inline;
+    padding: 8px;
+    color: black;
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+  }
+  .showMenu {
+    transform: translateY(0);
+  }
