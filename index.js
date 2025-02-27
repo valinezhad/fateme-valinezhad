@@ -1,3 +1,4 @@
+
 const buttonElement = document.getElementById('read-more');
 const pElement = document.getElementById('more-info');
 const showInfo = (domElement) => {
@@ -11,7 +12,7 @@ const showInfo = (domElement) => {
 buttonElement.addEventListener('click', () => {
     showInfo(pElement);
 })
-const menu = document.querySelector(".right-menu");
+const menu = document.querySelector(".header__right-menu ");
 const items = document.querySelectorAll(".item");
 const hamburger = document.querySelector(".hamburger");
 const menuIcon = document.querySelector(".menuIcon");
@@ -33,4 +34,5 @@ items.forEach(
         item.addEventListener('click', navmenu);
     }
 )
+const apikey = "169ea1bcf7343a0cc211782e287a9b74";
 

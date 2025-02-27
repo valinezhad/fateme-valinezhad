@@ -1,12 +1,14 @@
+@import url("burgermenu.css");
+@import url("API.css");
 :root {
-  --lightblue:  rgb(218, 230, 245);
+  --lightblue: rgb(218, 230, 245);
   --gray: rgb(107, 106, 106);
---azure: rgb(240, 255, 255);
---lightgray:rgb(211, 211, 211);
+  --azure: rgb(240, 255, 255);
+  --lightgray:rgb(211, 211, 211);
 }
-
 body {
   margin: auto;
+  background-color: rgb(244, 244, 245);
 }
 .container {
   margin: auto;
@@ -16,20 +18,6 @@ body {
 .header {
   background-color: var(--lightblue);
   padding-bottom: 100px;
- 
-}
-h1 {
-  border-bottom: 2px solid var(--gray);
-  inline-size: 70%;
-  row-gap:2px;
-  font-family: 'Space Mono', monospace;
-
-  margin-bottom: -2px;;
-}
-h2 {
-  font-family: 'Space Mono', monospace;
-  position: relative;
-  bottom: 18px;
 }
 .header__photo {
   width: 170px;
@@ -47,37 +35,46 @@ h2 {
   box-shadow: 2px 2px var(--lightgray);
   text-align: center;
   border-left: none;
- width: 140px;
- position: relative;
- top: 8px;
- 
-
+  width: 140px;
+  position: relative;
+  top: 8px;
 }
-.header__info-paragraph {
+.header__info-paragraph--name {
   display: flex;
   flex-direction: column;
-  
   margin-left: 30px;
   margin-top: 20px;
-
 }
-.info-paragraph__p {
+.header__info-paragraph--career {
   font-family: "Space Mono", serif;
   white-space: normal;
   position: relative;
   bottom: 57px;
 }
+h1 {
+  border-bottom: 2px solid var(--gray);
+  inline-size: 70%;
+  row-gap:2px;
+  font-family: 'Space Mono', monospace;
+  margin-bottom: -2px;
+ ;
+}
+h2 {
+  font-family: 'Space Mono', monospace;
+  position: relative;
+  bottom: 18px;
+}
+
 .main {
   display: flex;
   flex-direction: row;
   gap: 48px;
   @media (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
-  }
+      display: flex;
+      flex-direction: column;
+ }
 }
-
-.main_left-menu > span {
+.main__left-menu > span {
   border: 1px solid var(--gray);
   padding: 3px;
   margin-left: 30%;
@@ -85,118 +82,123 @@ h2 {
   border-radius: 50% 20% / 10% 40%;
   background-color:var(--azure);
   box-shadow: 2px 2px var(--lightgray);
-padding-right: 20px;
-font-family: 'Space Mono', monospace;
-  
+  padding-right: 20px;
+  font-family: 'Space Mono', monospace;
 }
-
-.main_left-menu {
+.main__left-menu {
   margin-top: 20px;
- 
-  border-radius: 50% 20% / 10% 40%
+  border-radius: 50% 20% / 10% 40%;
 }
-
 .menu {
   font-family: "Space Mono", serif;
-  
   font-style: normal;
 }
 .main__my-info{
   background-color:var(--lightblue);
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   border-radius: 20px;
   padding-top: 20px;
   padding: 20px;
+  padding-left: 10px;
 }
-
-.icon {
+.main__icon {
   width: 20px;
   height: 20px;
-  padding-top: 20px;
   padding-left: 5px;
 }
-
-
-
+.main__more-info {
+  display: none;
+}
+.main__button--about-me {
+  text-align: center;
+  font-family: "Space Mono", serif;
+  border-radius: 50% 20% / 10% 40%;
+  background-color:var(--azure);
+  box-shadow: 2px 2px var(--lightgray);
+  border: 1px solid var(--gray);
+  margin-left: 30%;
+  padding: 6px;
+}
 li{
   margin-bottom: 8px;
   padding-bottom: 5px;
   font-family: "Space Mono", serif;
-  
-  
-  font-style: normal;
-}
-ul {
-  margin-bottom: 5px;
-}
-.h3 {
   position: relative;
- 
-  font-family: "Space Mono", serif;
-  
+  bottom: -15px;
   font-style: normal;
-  
-
-  top: 10px;
- 
 }
 
-.education-section {
+.content__img {
+  width: 20px;
+  height: 20px;
+  margin-top: 12px;
+  margin-right: 8px;
+  padding-left: 9px;
+  font-family: "Space Mono", serif;
+  margin-bottom: -3px;
+  font-style: normal;
+}
+.content__education-section {
   border-left: 2px dashed var(--gray);
-  height: 160px;
+  height: 170px;
   position: relative;
   left: 4%;
+  bottom: 15px;
 }
-.language-skills {
-position: relative;
-bottom: 28px;
-
-
-}
-.it-expertise {
+.content__language-skills {
   position: relative;
-  bottom: 65px;
+  bottom: 45px;
 }
-
-.language-skills > ul, .it-expertise > ul {
-  border-left:2px dashed var(--gray); 
+.content__it-expertise {
   position: relative;
-  left:4%;
-  bottom: 9px;
- height: 160px;
+  bottom: 90px;
 }
-.more-info {
-  display: none;
+.content__it-expertise--span-color{
+  background-color: white;
+  height: 8px;
+  width: 10px;
+  border: 1px solid gray;
+  display: inline-block;
 }
-
-
-.footer {
- 
-  padding: 20px;
-  background-color: var(--lightblue);
-}
-a{
-position: relative;
-left:50%;
-
-}
-.my_info__button {
- text-align: center;
-
-  font-family: "Space Mono", serif;
-border-radius: 10px 10px;
-  background-color:var(--azure);
-  font-style: normal;
-  margin-left: 30%;
-  padding: 6px;
-  
-  
-}
-.dot {
+.content__it-expertise--span {
   height: 8px;
   width: 10px;
   background-color: black;
   display: inline-block;
+  border: 1px solid gray;
+}
+.content__language-skills > ul, .content__it-expertise > ul {
+  border-left:2px dashed var(--gray);
+  position: relative;
+  left:4%;
+  bottom: 18px;
+  height: 160px;
+}
+.my-documents__paragraph--title {
+  background-image: linear-gradient(gray, azure);
+  padding: 8px;
+  border-radius: 8px;
+  font-family: "Space Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 97%;
+ text-align: center;
+  border-bottom-right-radius:9px;
+  padding-bottom: 10px;
+}
+.my-documents {
+background-color:var(--lightblue);
+border-radius: 8px;
+padding-bottom: 10px;
+
+
+
+}
+.my-documents__a {
+  color: black;
+}
+.my-documents__paragrapg--diplom {
+  padding-left: 10px;
 }
 
 
@@ -211,54 +213,20 @@ border-radius: 10px 10px;
 }
 .gap-2 {
   gap: 1rem;
-
 }
 
-.hamburger {
-  position: fixed;
-  z-index: 100;
-  top:8px;
-  right:4px;
-  padding: 4px;
-  border: var(--gray) solid 1px;
-  background: var(--azure);
-  cursor: pointer;
+.footer {
+  padding: 20px;
+  background-color: var(--lightblue);
+  position: sticky;
 }
-
-.hamburger> .closeIcon {
-  display: none;
+.footer__icon {
+  width: 30px;
+  height: 30px;
+  padding-left: 5px;
 }
-.right-menu {
-  position: fixed;
-  transition: transform 0.2s;
-  left:0;
-  right: 0;
-  top: 0;
-  bottom: 0;;
-  transform: translateY(-100%);
-  list-style: none;
-  
-  }
-  .right-menu a{
-   color: black;
-   
-    
-  }
-   a:hover {
-    background-color: azure;
-    border-radius: 8px;
-  }
-  .right-menu li {
-    display: inline;
-    padding: 8px;
-    color: black;
-    @media (max-width: 600px) {
-      display: flex;
-      flex-direction: column;
-      
-    }
-
-  }
-  .showMenu {
-    transform: translateY(0);
-  }
+.footer a, .header__right-menu a{
+  position: relative;
+  left:50%;
+  color: black;
+}

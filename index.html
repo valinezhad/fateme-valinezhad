@@ -4,7 +4,6 @@
       <title>lebenslauf</title>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <link rel="stylesheet" href="style.css">
-
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +12,8 @@
    </head>
    <body>
       <div class="header">
-         <div class="nav">
-            <ul class="right-menu">
+         <div class="header__hamburger-menu">
+            <ul class="header__right-menu">
                <li class="item"><a href="#">Home</a></li>
                <li class="item"><a href="#">Personlichdaten</a></li>
                <li class="item"><a href="#">Über mich</a></li>
@@ -23,17 +22,16 @@
             <button class="hamburger">
                <i class="menuIcon  material-icons">menu</i>
                <i class="closeIcon  material-icons">close</i> 
-
             </button>
          </div>
          <div class="header__cv">Lebenslauf</div>
          <div class="container">
             <div class="d-flex flex-wrap gap-2">
                <img class="header__photo" src= "./fati copy.png"/>
-               <div class="header__info-paragraph">
+               <div class="header__info-paragraph--name">
                   <h1>Fateme Valinezhad</h1>
                   <h2>Software Engineer:</h2>
-                  <p class="info-paragraph__p"> Ich habe Software-Engineering in Sanandaj, Kurdistan studiert und interessiere</br>mich sehr für HTML, CSS und JavaScript
+                  <p class="header__info-paragraph--career"> Ich habe Software Engineering in Sanandaj, Kurdistan, studiert und interessiere</br>mich sehr für HTML, CSS und JavaScript
                   </p>
                </div>
             </div>
@@ -41,7 +39,7 @@
       </div>
       <div class="container">
          <section class="main">
-            <div class="main_left-menu">
+            <div class="main__left-menu">
                <span>PERSONLICHEDATEN</span>
                <div class="main__my-info">
                   <div class="menu d-flex flex-column gap-2">
@@ -52,31 +50,47 @@
                </div>
                <div class="main__my-info">
                   <div class="menu d-flex flex-column gap-2">
-                     <div><img class="icon"src="./phone.svg"/> Telefonnummer: 078/2629995</div>
-                     <div><img class="icon"src="./mail.svg"/> E-Mail: valinezhadfatemeh@gmail.com</div>
-                     <div><img class="icon"src="./map.svg"/> Sihlweidstrasse 1, Zürich/8041</div>
+                     <div><img class="main__icon"src="./phone.svg"/> Telefonnummer:078/2629995</div>
+                     <div><img class="main__icon"src="./mail.svg"/> E-Mail:valinezhadfatemeh@gmail.com</div>
+                     <div><img class="main__icon"src="./map.svg"/> Adresse:Sihlweidstrasse 1, Zürich/8041</div>
                   </div>
                </div>
                <div class="main__my-info">
-                  <button class = my_info__button id="read-more">mehr information über mich</button>
+                  <button class ="main__button--about-me" id="read-more">mehr information über mich</button>
                   <div class="menu d-flex flex-column gap-2">
-                     <p class="more-info" id="more-info">Ich habe Software-Engineering </br>in Sanandaj, Kurdistan studiert und interessiere </br>mich sehr fur HTML, CSS und JavaScript.                     
+                     <p class="main__more-info" id="more-info">Ich habe Software-Engineering </br>in Sanandaj, Kurdistan studiert und interessiere </br>mich sehr fur HTML, CSS und JavaScript.                     
                         </br> Ich habe Software-Engineering </br>in Sanandaj, Kurdistan studiert und interessiere </br>mich sehr fur HTML, CSS und JavaScrip.
                      </p>
                   </div>
                </div>
-               <div class="menu"><a href="#">Link 1</a><br><a href="#">Link 2</a><br><a href="#">Link 3</a></div>
-               <div class="menu"><a href="#">Link 1</a><br><a href="#">Link 2</a><br><a href="#">Link 3</a></div>
-               <div class="menu"><a href="#">Link 1</a><br><a href="#">Link 2</a><br><a href="#">Link 3</a></div>
-               <div class="menu"><a href="#">Link 1</a><br><a href="#">Link 2</a><br><a href="#">Link 3</a></div>
-               <div class="menu"><a href="#">Link 1</a><br><a href="#">Link 2</a><br><a href="#">Link 3</a></div>
-               <div class="menu"><a href="#">Link 1</a><br><a href="#">Link 2</a><br><a href="#">Link 3</a></div>
-               <div class="menu"><a href="#">Link 1</a><br><a href="#">Link 2</a><br><a href="#">Link 3</a></div>
-               <div class="menu"><a href="#">Link 1</a><br><a href="#">Link 2</a><br><a href="#">Link 3</a></div>
+               <div class="my-documents">
+                  <p class="my-documents__paragraph--title">meine unterlagen</p>
+                <div>
+                 <p class="my-documents__paragrapg--diplom">Meine <a class="my-documents__a" href="./Diplomanerkennung.pdf">Diplomanerkennung</a></p>
+                 <p class="my-documents__paragrapg--diplom">Meine <a class="my-documents__a" href="./Diplom Original und Übersetzung copy.pdf">Diplom Original und Übersetzung</a></p>
+                 <p class="my-documents__paragrapg--diplom">Meine <a class="my-documents__a" href="./Masterdiplom_Übersetzung copy.pdf">Masterdiplom und Übersetzung</a></p>
+                 
+                </div>
+               </div>
+               <div class="weather-api">
+                 <div class="weather-api__search">
+                  <input type="text" class="search-bar">
+                  <button><img class="weather-api__img--search" src="./search.svg"/></button>
+                  <div class="weather-api__weather">
+                     <h5 class="city">weather in zürich</h5>
+                     <div class="temp">40°C</div>
+                     <div class="discription">Bewölkt</div>
+                     <div class="humidity">Luftfeuchtigkeit: 60%</div>
+                     <div class="wind"> Windgeschwindigkeit: 7.2 km/h</div>
+
+                  </div>
+                 </div>
+               
+               </div>
             </div>
             <div class="content">
-               <h3><img class="icon" src="academic.svg">AUSBILDUNG </h3>
-               <div class="education-section">
+               <h3><img class="content__img" src="academic.svg">AUSBILDUNG </h3>
+               <div class="content__education-section">
                   <ul>
                      <li>2015 - 2018 Masterstudium Informatik, Iran</li>
                      <li>2013 - 2015 Bachelorstudium Informatik, Iran</li>
@@ -84,21 +98,21 @@
                      <li>2001 - 2008 Grundschule, Dehgolan Iran</li>
                   </ul>
                </div>
-               <div class="language-skills">
-                  <h3><img class="icon" src="./book.svg"/>SPRACHKENNTNISSE</h3>
-                  <ul class="fati">
+               <div class="content__language-skills">
+                  <h3><img class="content__img" src="./book.svg"/>SPRACHKENNTNISSE</h3>
+                  <ul>
                      <li>Deutsch Niveau B2</li>
                      <li>Kurdisch Muttersprache</li>
                      <li>Englisch gute Kenntnisse</li>
                      <li>Persisch sehr gute Kenntnisse</li>
                   </ul>
                </div>
-               <div class="it-expertise">
-                  <h3><img class="icon" src="./computer.svg"/>IT-FACHKENNTNISSE</h3>
-                  <ul class="fati">
-                     <li>HTML <span class= "dot"></span> <span class= "dot"></span> <span class= "dot"></span> <span class= "dot"></span> </span> <span class= "dot"></span></li>
-                     <li>CSS <span class= "dot"></span> <span class= "dot"></span> <span class= "dot"></span> <span class= "dot"></span> </span> <span class= "dot"></span></li>
-                     <li>JavaScript <span class= "dot"></span> <span class= "dot"></span> <span class= "dot"></span> <span class= "dot"></span> </span> <span class= "dot"></span></li>
+               <div class="content__it-expertise">
+                  <h3><img class="content__img" src="./computer.svg"/>IT-FACHKENNTNISSE</h3>
+                  <ul>
+                     <li>HTML <span class= "content__it-expertise--span"></span> <span class= "content__it-expertise--span"></span> <span class= "content__it-expertise--span"></span> <span class= "content__it-expertise--span"></span> </span> <span class="content__it-expertise--span"></span></li>
+                     <li>CSS <span class= "content__it-expertise--span"></span> <span class= "content__it-expertise--span"></span> <span class= "content__it-expertise--span"></span> <span class= content__it-expertise--span-color></span> </span> <span class="content__it-expertise--span-color"></span></li>
+                     <li>JavaScript <span class= "content__it-expertise--span"></span> <span class= "content__it-expertise--span"></span> <span class= "content__it-expertise--span-color"></span> <span class="content__it-expertise--span-color"></span> </span> <span class="content__it-expertise--span-color"></span></li>
                   </ul>
                </div>
             </div>
@@ -106,9 +120,9 @@
       </div>
       <div class="footer">
          <div class="container">
-            <a href="mailto:valinezhadfatemeh@gmail.com"><img class="icon" src="./email.png"/></a>
-            <a href="https://github.com/valinezhad"><img class="icon"src="./github.webp"/></a>
-            <a href="#"><img class="icon"src="./linkedin.webp"/></a>
+            <a href="mailto:valinezhadfatemeh@gmail.com"><img class="footer__icon" src="./email.png"/></a>
+            <a href="https://github.com/valinezhad"><img class="footer__icon"src="./github.webp"/></a>
+            <a href="#"><img class="footer__icon"src="./linkedin.webp"/></a>
          </div>
       </div>
      

@@ -1,0 +1,45 @@
+/*Burgermenu style*/
+
+.hamburger {
+    position: fixed;
+    z-index: 100;
+    top:8px;
+    right:4px;
+    padding: 4px;
+    border: var(--gray) solid 1px;
+    background: var(--azure);
+    cursor: pointer;
+  }
+  .hamburger> .closeIcon {
+    display: none;
+  }
+  .header__right-menu {
+    position: fixed;
+    transition: transform 0.2s;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateY(-100%);
+    list-style: none;
+   /*background-color: hotpink;*/
+    z-index: 1;
+    margin: 0;
+  }
+  .header__right-menu a:hover {
+    background-color: azure;
+    border-radius: 8px;
+  }
+  .header__right-menu li {
+    display: inline;
+    padding: 8px;
+    color: black;
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+   }
+  }
+  .showMenu {
+    transform: translateY(0);
+  }
+  
