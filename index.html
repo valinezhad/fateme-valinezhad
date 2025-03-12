@@ -7,7 +7,7 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <script src="index.js" async></script>
+      <script src="index.js" defer></script>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
    </head>
    <body>
@@ -20,8 +20,8 @@
                <li class="item"><a href="#">Ausbildung</a></li>
             </ul>
             <button class="hamburger">
-               <i class="menuIcon  material-icons">menu</i>
-               <i class="closeIcon  material-icons">close</i> 
+            <i class="menuIcon  material-icons">menu</i>
+            <i class="closeIcon  material-icons">close</i> 
             </button>
          </div>
          <div class="header__cv">Lebenslauf</div>
@@ -65,27 +65,25 @@
                </div>
                <div class="my-documents">
                   <p class="my-documents__paragraph--title">meine unterlagen</p>
-                <div>
-                 <p class="my-documents__paragrapg--diplom">Meine <a class="my-documents__a" href="./Diplomanerkennung.pdf">Diplomanerkennung</a></p>
-                 <p class="my-documents__paragrapg--diplom">Meine <a class="my-documents__a" href="./Diplom Original und Übersetzung copy.pdf">Diplom Original und Übersetzung</a></p>
-                 <p class="my-documents__paragrapg--diplom">Meine <a class="my-documents__a" href="./Masterdiplom_Übersetzung copy.pdf">Masterdiplom und Übersetzung</a></p>
-                 
-                </div>
+                  <div>
+                     <p class="my-documents__paragrapg--diplom">Meine <a class="my-documents__a" href="./Diplomanerkennung.pdf">Diplomanerkennung</a></p>
+                     <p class="my-documents__paragrapg--diplom">Meine <a class="my-documents__a" href="./Diplom Original und Übersetzung copy.pdf">Diplom Original und Übersetzung</a></p>
+                     <p class="my-documents__paragrapg--diplom">Meine <a class="my-documents__a" href="./Masterdiplom_Übersetzung copy.pdf">Masterdiplom und Übersetzung</a></p>
+                  </div>
                </div>
-               <div class="weather-api">
-                 <div class="weather-api__search">
-                  <input type="text" class="search-bar">
-                  <button><img class="weather-api__img--search" src="./search.svg"/></button>
-                  <div class="weather-api__weather">
+               <div class="card">
+                  <div class="search">
+                     <input type="text" class="search-bar">
+                     <button><img class="card__img" src="./search.svg"/></button>
+                     <div class="weather">
+                  </div>  
                      <h5 class="city">weather in zürich</h5>
                      <div class="temp">40°C</div>
-                     <div class="discription">Bewölkt</div>
+                     <img src="" akt="" class="icon"/>
+                     <div class="description">Bewölkt</div>
                      <div class="humidity">Luftfeuchtigkeit: 60%</div>
                      <div class="wind"> Windgeschwindigkeit: 7.2 km/h</div>
-
-                  </div>
-                 </div>
-               
+                  
                </div>
             </div>
             <div class="content">
@@ -125,6 +123,5 @@
             <a href="#"><img class="footer__icon"src="./linkedin.webp"/></a>
          </div>
       </div>
-     
    </body>
 </html>
