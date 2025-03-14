@@ -67,7 +67,7 @@ h2 {
 
 .main {
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
   gap: 48px;
   @media (max-width: 600px) {
       display: flex;
