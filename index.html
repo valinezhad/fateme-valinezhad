@@ -8,6 +8,9 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <script src="index.js" defer></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
    </head>
    <body>
@@ -48,14 +51,14 @@
                      <div>Bewilligung: B (seit 21.03.19 in der Schweiz)</div>
                   </div>
                </div>
-               <div class="main__my-info">
+               <div class="main__my-info--zwei">
                   <div class="menu d-flex flex-column gap-2">
                      <div><img class="main__icon"src="./phone.svg"/> Telefonnummer:078/2629995</div>
                      <div><img class="main__icon"src="./mail.svg"/> E-Mail:valinezhadfatemeh@gmail.com</div>
                      <div><img class="main__icon"src="./map.svg"/> Adresse:Sihlweidstrasse 1, Zürich/8041</div>
                   </div>
                </div>
-               <div class="main__my-info">
+               <div class="main__my-info--drei">
                   <button class ="main__button--about-me" id="read-more">mehr information über mich</button>
                   <div class="menu d-flex flex-column gap-2">
                      <p class="main__more-info" id="more-info">Ich habe Software-Engineering </br>in Sanandaj, Kurdistan studiert und interessiere </br>mich sehr fur HTML, CSS und JavaScript.                     
@@ -63,7 +66,7 @@
                      </p>
                   </div>
                </div>
-               <div class="my-documents">
+               <div class="my-documents" id="documents">
                   <p class="my-documents__paragraph--title">meine unterlagen</p>
                   <div>
                      <p class="my-documents__paragrapg--diplom">Meine <a class="my-documents__a" href="./Diplomanerkennung.pdf">Diplomanerkennung</a></p>
@@ -73,15 +76,16 @@
                </div>
                <div class="card">
                   <div class="search">
-                     <input type="text" class="search-bar">
-                     <button><img class="card__img" src="./search.svg"/></button>
-                     <div class="weather"></div>
-                     <h5 class="city">weather in zürich</h5>
-                     <div class="temp">40°C</div>
-                     <img src="" akt="" class="icon"/>
-                     <div class="description">Bewölkt</div>
-                     <div class="humidity">Luftfeuchtigkeit: 60%</div>
-                     <div class="wind"> Windgeschwindigkeit: 7.2 km/h</div>
+                     <input type="text" class="search-bar" placeholder="search">
+                     <button class="button__card"><img class="card__img" src="./search.svg"/></button>
+                  </div>
+                  <div class="weather">
+                     <h5 class="city">Weather in Zurich</h5>
+                      <img src="" alt="" class="icon"/>
+                      <div class="temp">40°C</div>
+                     <div class="description">Cloudy</div>
+                     <div class="humidity">Humidity: 60%</div>
+                     <div class="wind">Wind speed: 7.2 km/h</div>
                   </div>
                </div>
             </div>
@@ -115,7 +119,7 @@
             </div>
          </section>
       </div>
-      <div class="footer">
+      <div class="footer" id="footer">
          <div class="container">
             <a href="mailto:valinezhadfatemeh@gmail.com"><img class="footer__icon" src="./email.png"/></a>
             <a href="https://github.com/valinezhad"><img class="footer__icon"src="./github.webp"/></a>

@@ -1,40 +1,60 @@
 .card__img {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     cursor: pointer;
-transition: 0.2 ease-in-out;
-border-radius: 50%;
     
-  }
-  .card {
-    padding: 2em;
-    border-radius:30px;
-    margin: 1em;
-    
-
-  }
+padding-left: 10px;
  
-  .search {
-    background-color:var(--lightblue);
-    border-radius: 10px;
-    padding-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    justify-content: center;
-    padding: 2rem;
-  }
- .button {
- margin: 0.5em;
- border-radius: 10%;
- border: none;
- height: 46em;
-width: 46em;
-outline: none;
-border-radius: 50%;
-cursor: pointer;
-transition: 0.2 ease-in-out;
+    
 
- }
+  }
+  .button__card{
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+    position: relative;
+   top: 2.30px;
+  }
+  .weather {
+    
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+  }
+  
+  .temp {
+    
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+  font-style: normal;
+  position: relative;
+  bottom: 35px;
+left: 20%;
+
+
+  }
+  .button__card:hover {
+    background-color: rgb(222, 215, 215);
+  }
+  
+  .card {
+    margin-top:10px;
+    
+    border-radius: 20px;
+    padding-top: 20px;
+    padding: 20px;
+    padding-left: 10px;
+    background-image: url("./weather.webp");
+  
+  }
+  .search {
+    padding-left: 25%;
+  }
+  .description, .humidity{
+    padding-bottom: 8px;
+  }
+  
+  
+ 
  input.search-bar  {
 border: none;
 outline:none;
@@ -42,7 +62,9 @@ padding: 0.5em 1em;
 border-radius: 18px;
 width:calc(100%-100px);
  }
- .button:hover{
-  background-color: blueviolet;
-
+ .city {
+ font-size: 15px;
+ 
+ 
  }
+ 

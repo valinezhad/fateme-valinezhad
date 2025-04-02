@@ -65,6 +65,7 @@ h2 {
   bottom: 18px;
 }
 
+
 .main {
   display: flex;
   flex-direction:row;
@@ -95,11 +96,33 @@ h2 {
 }
 .main__my-info{
   background-color:var(--lightblue);
-  padding-bottom: 30px;
+  
   border-radius: 20px;
-  padding-top: 20px;
+padding: 20px;
+
+
+  
+ 
+}
+.main__my-info--zwei {
+  background-color:var(--lightblue);
+  
+  border-radius: 20px;
+  margin-top: 6px;
   padding: 20px;
-  padding-left: 10px;
+  
+
+ 
+}
+.main__my-info--drei{
+  background-color:var(--lightblue);
+  
+  border-radius: 20px;
+  margin-top: 6px;
+  padding: 20px;
+  
+
+ 
 }
 .main__icon {
   width: 20px;
@@ -124,34 +147,37 @@ li{
   padding-bottom: 5px;
   font-family: "Space Mono", serif;
   position: relative;
-  bottom: -15px;
+  bottom: -30px;
   font-style: normal;
+  
 }
 
 .content__img {
-  width: 20px;
-  height: 20px;
-  margin-top: 12px;
+  width:25px;
+  height:25px;
+  margin-top: 30px;
   margin-right: 8px;
   padding-left: 9px;
   font-family: "Space Mono", serif;
-  margin-bottom: -3px;
+  margin-bottom: -4px;
   font-style: normal;
 }
 .content__education-section {
   border-left: 2px dashed var(--gray);
-  height: 170px;
+  height: 190px;
   position: relative;
   left: 4%;
-  bottom: 15px;
+ bottom: 15px;
+  
 }
+
 .content__language-skills {
   position: relative;
-  bottom: 45px;
+  bottom: 63px;
 }
 .content__it-expertise {
   position: relative;
-  bottom: 90px;
+  bottom: 129px;
 }
 .content__it-expertise--span-color{
   background-color: white;
@@ -172,7 +198,7 @@ li{
   position: relative;
   left:4%;
   bottom: 18px;
-  height: 160px;
+  height: 190px;
 }
 .my-documents__paragraph--title {
   background-image: linear-gradient(gray, azure);
@@ -190,6 +216,7 @@ li{
 background-color:var(--lightblue);
 border-radius: 8px;
 padding-bottom: 10px;
+
 
 
 

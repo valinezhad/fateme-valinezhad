@@ -13,6 +13,9 @@
   .hamburger> .closeIcon {
     display: none;
   }
+  .hamburger:hover {
+    background-color: gray;
+  }
   .header__right-menu {
     position: fixed;
     transition: transform 0.2s;
@@ -22,7 +25,7 @@
     bottom: 0;
     transform: translateY(-100%);
     list-style: none;
-   /*background-color: hotpink;*/
+   background-color: white;
     z-index: 1;
     margin: 0;
   }
