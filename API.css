@@ -1,50 +1,40 @@
 .card__img {
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-    
+width: 15px;
+height: 15px;
+cursor: pointer;
 padding-left: 10px;
- 
-    
-
   }
   .button__card{
-    border-radius: 50%;
-    background-color: white;
-    border: 1px solid white;
-    position: relative;
-   top: 2.30px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid white;
+  position: relative;
+  top: 2.30px;
   }
   .weather {
-    
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
   }
   
   .temp {
-    
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
   font-style: normal;
   position: relative;
-  bottom: 35px;
-left: 20%;
-
-
+  bottom: 10px;
   }
   .button__card:hover {
     background-color: rgb(222, 215, 215);
   }
   
   .card {
-    margin-top:10px;
-    
+    margin-top:6px;
     border-radius: 20px;
     padding-top: 20px;
     padding: 20px;
     padding-left: 10px;
-    background-image: url("./weather.webp");
-  
+    background-image: url("./cloudy.jpg");
+    margin-bottom: 20px;
   }
   .search {
     padding-left: 25%;
@@ -52,9 +42,6 @@ left: 20%;
   .description, .humidity{
     padding-bottom: 8px;
   }
-  
-  
- 
  input.search-bar  {
 border: none;
 outline:none;
@@ -64,7 +51,12 @@ width:calc(100%-100px);
  }
  .city {
  font-size: 15px;
- 
- 
+ }
+ .weather__img {
+  width: 30px;
+  height:30px;
+  position: relative;
+  top: 10px;
+  padding-right: 8px;
  }
  

@@ -1,7 +1,7 @@
 @import url("burgermenu.css");
 @import url("API.css");
 :root {
-  --lightblue: rgb(218, 230, 245);
+  --orange: #E07A5F ;
   --gray: rgb(107, 106, 106);
   --azure: rgb(240, 255, 255);
   --lightgray:rgb(211, 211, 211);
@@ -16,8 +16,9 @@ body {
   padding-inline: 1rem;
 }
 .header {
-  background-color: var(--lightblue);
+  background-color: black;
   padding-bottom: 100px;
+  color: white;
 }
 .header__photo {
   width: 170px;
@@ -31,8 +32,8 @@ body {
   font-size: 30px;
   border: 1px solid var(--gray);
   padding: 4px 50px;
-  background-color: var(--azure);
-  box-shadow: 2px 2px var(--lightgray);
+  background-color:var(--orange) ;
+  box-shadow: 2px 2px gray;
   text-align: center;
   border-left: none;
   width: 140px;
@@ -57,15 +58,21 @@ h1 {
   row-gap:2px;
   font-family: 'Space Mono', monospace;
   margin-bottom: -2px;
- ;
+}
+h1:hover {
+  color:var(--lightblue)
+}
+.h1, span {
+  color: var(--orange)
+}
+h1>span:hover {
+  color: var(--gray);
 }
 h2 {
   font-family: 'Space Mono', monospace;
   position: relative;
   bottom: 18px;
 }
-
-
 .main {
   display: flex;
   flex-direction:row;
@@ -81,10 +88,12 @@ h2 {
   margin-left: 30%;
   padding-top: 3px;
   border-radius: 50% 20% / 10% 40%;
-  background-color:var(--azure);
+  background-color:gray;
   box-shadow: 2px 2px var(--lightgray);
   padding-right: 20px;
   font-family: 'Space Mono', monospace;
+  color:black;
+  font-weight: bold;
 }
 .main__left-menu {
   margin-top: 20px;
@@ -95,52 +104,57 @@ h2 {
   font-style: normal;
 }
 .main__my-info{
-  background-color:var(--lightblue);
-  
-  border-radius: 20px;
-padding: 20px;
-
-
-  
- 
+background-color:var(--orange);
+color:black;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 40px;
+padding-bottom: 20px;
+padding-top: 20px;
+padding-left: 10px;
 }
 .main__my-info--zwei {
-  background-color:var(--lightblue);
-  
-  border-radius: 20px;
-  margin-top: 6px;
-  padding: 20px;
-  
-
- 
+background-color:var(--orange);
+color: black;
+border-top-left-radius: 40px;
+border-bottom-right-radius: 10px; 
+padding-bottom: 20px;
+padding-top: 20px;
 }
 .main__my-info--drei{
-  background-color:var(--lightblue);
-  
-  border-radius: 20px;
-  margin-top: 6px;
-  padding: 20px;
-  
-
+  background-color:var(--orange);
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 40px;
+  margin-top: 15px;
+  padding-bottom: 60px;
+  padding-top: 20px;
+ margin-bottom:-6px;
+  padding-left: 10px;
+  text-align: justify
  
 }
 .main__icon {
   width: 20px;
   height: 20px;
   padding-left: 5px;
+  position: relative;
+  top: 4px;
+  
 }
 .main__more-info {
   display: none;
 }
 .main__button--about-me {
   text-align: center;
-  font-family: "Space Mono", serif;
+  font-family: 'Space Mono', monospace;
   border-radius: 50% 20% / 10% 40%;
-  background-color:var(--azure);
+  background-color:gray;
   box-shadow: 2px 2px var(--lightgray);
   border: 1px solid var(--gray);
-  margin-left: 30%;
+  margin-left: 25%;
   padding: 6px;
+  color: black;
+  font-weight: bold;
+  font-size:13px;
 }
 li{
   margin-bottom: 8px;
@@ -163,10 +177,10 @@ li{
   font-style: normal;
 }
 .content__education-section {
-  border-left: 2px dashed var(--gray);
-  height: 190px;
-  position: relative;
-  left: 4%;
+border-left: 2px dashed var(--gray);
+height: 190px;
+position: relative;
+left: 4%;
  bottom: 15px;
   
 }
@@ -183,7 +197,7 @@ li{
   background-color: white;
   height: 8px;
   width: 10px;
-  border: 1px solid gray;
+  border: 1px solid var(--gray);
   display: inline-block;
 }
 .content__it-expertise--span {
@@ -191,7 +205,7 @@ li{
   width: 10px;
   background-color: black;
   display: inline-block;
-  border: 1px solid gray;
+  border: 1px solid var(--gray);
 }
 .content__language-skills > ul, .content__it-expertise > ul {
   border-left:2px dashed var(--gray);
@@ -201,28 +215,31 @@ li{
   height: 190px;
 }
 .my-documents__paragraph--title {
-  background-image: linear-gradient(gray, azure);
-  padding: 8px;
-  border-radius: 8px;
-  font-family: "Space Mono", serif;
-  font-weight: 400;
-  font-style: normal;
-  width: 97%;
- text-align: center;
-  border-bottom-right-radius:9px;
-  padding-bottom: 10px;
+padding-left:13px ;
+font-family: "Space Mono", serif;
+font-weight: 400;
+font-style: normal;
+width: 97%;
+text-align: center;
+margin-top: 6px;
+padding-bottom: 10px;
+}
+.my-documents__paragraph--title:hover {
+  color:gray;
 }
 .my-documents {
-background-color:var(--lightblue);
-border-radius: 8px;
+background-color:var(--orange);
+border-top-left-radius: 40px;
+border-bottom-right-radius: 10px;
 padding-bottom: 10px;
-
-
-
-
+color: black;
 }
 .my-documents__a {
   color: black;
+  
+}
+a:hover {
+  color: gray;
 }
 .my-documents__paragrapg--diplom {
   padding-left: 10px;
@@ -244,16 +261,28 @@ padding-bottom: 10px;
 
 .footer {
   padding: 20px;
-  background-color: var(--lightblue);
+  background-color: black;
   position: sticky;
 }
 .footer__icon {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   padding-left: 5px;
+  border-radius: 50%;
+}
+.footer__icon:hover {
+ width: 70px;
+ height: 70px;
+ color: gray;
+ 
 }
 .footer a, .header__right-menu a{
   position: relative;
-  left:50%;
+  left:45%;
   color: black;
+  padding-left: 25px;
+  @media (max-width: 600px) {
+    left:20%;
 }
+}
+

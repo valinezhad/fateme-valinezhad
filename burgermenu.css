@@ -7,7 +7,7 @@
     right:4px;
     padding: 4px;
     border: var(--gray) solid 1px;
-    background: var(--azure);
+    background:var(--orange);
     cursor: pointer;
   }
   .hamburger> .closeIcon {
@@ -25,12 +25,12 @@
     bottom: 0;
     transform: translateY(-100%);
     list-style: none;
-   background-color: white;
+   background-color:var(--orange);
     z-index: 1;
     margin: 0;
   }
   .header__right-menu a:hover {
-    background-color: azure;
+    background-color: var(--orange);
     border-radius: 8px;
   }
   .header__right-menu li {
