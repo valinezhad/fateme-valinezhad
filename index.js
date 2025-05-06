@@ -1,17 +1,29 @@
 
-const buttonElement = document.getElementById('read-more');
-const pElement = document.getElementById('more-info');
-const showInfo = (domElement) => {
-    if (domElement.style.display !== 'block') {
-        domElement.style.display = 'block';
-    } else {
-        domElement.style.display = 'none'
+//const buttonElement = document.getElementById('read-more');
+//const pElement = document.getElementById('more-info');
+//const showInfo = (domElement) => {
+    //if (domElement.style.display !== 'block') {
+        //domElement.style.display = 'block';
+   // } else {
+       // domElement.style.display = 'none'
 
-    }
-}
+    //}
+//}
+//buttonElement.addEventListener('click', () => {
+   //// showInfo(pElement);
+//})
+const buttonElement = document.getElementById('read-more'); // Der Button
+const boxElement = document.getElementById('info-box'); // Die Info-Box
+
 buttonElement.addEventListener('click', () => {
-    showInfo(pElement);
-})
+  if (boxElement.style.display !== 'block') {
+    boxElement.style.display = 'block'; // Zeige die Box
+  } else {
+    boxElement.style.display = 'none'; // Verstecke die Box
+  }
+});
+
+
 const menu = document.querySelector(".header__right-menu ");
 const items = document.querySelectorAll(".item");
 const hamburger = document.querySelector(".hamburger");

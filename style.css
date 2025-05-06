@@ -8,7 +8,7 @@
 }
 body {
   margin: auto;
-  background-color: rgb(244, 244, 245);
+  background-color: #FFFCF2
 }
 .container {
   margin: auto;
@@ -16,19 +16,38 @@ body {
   padding-inline: 1rem;
 }
 .header {
-  background-color: black;
+  background-color:#403D39;
   padding-bottom: 100px;
   color: white;
+  border-bottom:1px solid #E07A5F;
+  box-shadow:3px 1px #E07A5F;
 }
 .header__photo {
   width: 170px;
   height: 170px;
   border-radius: 90px;
-  border: 3px solid var(--gray);
+  border: 1px solid #E07A5F;
   margin-top: 20px;
   margin-left: 40px;
 }
-.header__cv {
+.Lebenslauf {
+  
+border:1px solid#E07A5F;
+height: 20px;
+width: 20px;
+border-radius: 50px;
+background-color:#FFFCF2;
+color: black;
+padding: 5px;
+font-size:medium;
+position: relative;
+top:150px;
+left: 215px;
+
+
+
+}
+/*.header__cv {
   font-size: 30px;
   border: 1px solid var(--gray);
   padding: 4px 50px;
@@ -39,7 +58,7 @@ body {
   width: 140px;
   position: relative;
   top: 8px;
-}
+}*/
 .header__info-paragraph--name {
   display: flex;
   flex-direction: column;
@@ -53,26 +72,69 @@ body {
   bottom: 57px;
 }
 h1 {
-  border-bottom: 2px solid var(--gray);
-  inline-size: 70%;
+  border-bottom: 2px solid var(--orange);
+  inline-size: 130%;
   row-gap:2px;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  
+
   margin-bottom: -2px;
+ 
 }
 h1:hover {
   color:var(--lightblue)
 }
 .h1, span {
-  color: var(--orange)
+  color: var(--orange);
+
+  
 }
 h1>span:hover {
   color: var(--gray);
 }
+
+
 h2 {
-  font-family: 'Space Mono', monospace;
+  
   position: relative;
-  bottom: 18px;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
+.skils {
+  color: white;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  
+ 
+}
+h3 {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal
+}
+.info {
+ 
+  
+  border-radius: 10px;
+  background-color:#403D39 ;
+  /*box-shadow: 2px 2px #FFFCF2;*/
+  border: 1px solid var(--orange);
+  margin-left: 25%;
+  padding: 6px;
+  color: white;
+  
+  font-size:13px;
+  position:relative;
+  left: 170px;
+  bottom:33px;
+  text-decoration: none;
+  width: 170px;
+}
+
 .main {
   display: flex;
   flex-direction:row;
@@ -83,44 +145,60 @@ h2 {
  }
 }
 .main__left-menu > span {
-  border: 1px solid var(--gray);
+  
   padding: 3px;
   margin-left: 30%;
   padding-top: 3px;
-  border-radius: 50% 20% / 10% 40%;
-  background-color:gray;
-  box-shadow: 2px 2px var(--lightgray);
+ 
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+  
   padding-right: 20px;
-  font-family: 'Space Mono', monospace;
-  color:black;
-  font-weight: bold;
+
+ 
+  color:white;
+  
+}
+.main__left-menu > span:hover {
+color:#CCC5B9;
 }
 .main__left-menu {
-  margin-top: 20px;
-  border-radius: 50% 20% / 10% 40%;
+  
+  background-color: #403D39;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+ 
 }
 .menu {
-  font-family: "Space Mono", serif;
+  
   font-style: normal;
 }
 .main__my-info{
-background-color:var(--orange);
-color:black;
+
+color:#FFFCF2;
 border-top-left-radius: 10px;
-border-bottom-right-radius: 40px;
+font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
 padding-bottom: 20px;
 padding-top: 20px;
-padding-left: 10px;
+
+border-bottom: 1px solid var(--orange);
+
+
+
 }
+
 .main__my-info--zwei {
-background-color:var(--orange);
+
 color: black;
-border-top-left-radius: 40px;
-border-bottom-right-radius: 10px; 
+
 padding-bottom: 20px;
 padding-top: 20px;
 }
-.main__my-info--drei{
+/*.main__my-info--drei{
   background-color:var(--orange);
   border-top-left-radius: 10px;
   border-bottom-right-radius: 40px;
@@ -131,7 +209,7 @@ padding-top: 20px;
   padding-left: 10px;
   text-align: justify
  
-}
+}*/
 .main__icon {
   width: 20px;
   height: 20px;
@@ -141,25 +219,54 @@ padding-top: 20px;
   
 }
 .main__more-info {
-  display: none;
+ color: #403D39;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contact__me {
+  text-decoration: none;
+  color: white;
 }
 .main__button--about-me {
   text-align: center;
-  font-family: 'Space Mono', monospace;
-  border-radius: 50% 20% / 10% 40%;
-  background-color:gray;
-  box-shadow: 2px 2px var(--lightgray);
-  border: 1px solid var(--gray);
+  
+  border-radius: 10px;
+  background-color:#403D39 ;
+  /*box-shadow: 2px 2px #FFFCF2;*/
+  border: 1px solid var(--orange);
   margin-left: 25%;
   padding: 6px;
-  color: black;
+  color: white;
   font-weight: bold;
   font-size:13px;
+  position:relative;
+  right:112px;
+  
 }
+.main__button--my-experience{
+  text-align: center;
+  
+  border-radius: 10px;
+  background-color:#403D39 ;
+  /*box-shadow: 2px 2px #FFFCF2;*/
+  border: 1px solid var(--orange);
+  margin-left: 25%;
+  padding: 6px;
+  color: white;
+  font-weight: bold;
+  font-size:13px;
+  position: relative;
+  left:200px;
+bottom: 30px;
+ 
+} 
+
 li{
   margin-bottom: 8px;
   padding-bottom: 5px;
-  font-family: "Space Mono", serif;
+  
   position: relative;
   bottom: -30px;
   font-style: normal;
@@ -172,7 +279,7 @@ li{
   margin-top: 30px;
   margin-right: 8px;
   padding-left: 9px;
-  font-family: "Space Mono", serif;
+  
   margin-bottom: -4px;
   font-style: normal;
 }
@@ -182,16 +289,25 @@ height: 190px;
 position: relative;
 left: 4%;
  bottom: 15px;
+ font-family: "Space Mono", monospace;
+ font-weight: 400;
+ font-style: normal;
   
 }
 
 .content__language-skills {
   position: relative;
   bottom: 63px;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 .content__it-expertise {
   position: relative;
   bottom: 129px;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 .content__it-expertise--span-color{
   background-color: white;
@@ -216,26 +332,27 @@ left: 4%;
 }
 .my-documents__paragraph--title {
 padding-left:13px ;
-font-family: "Space Mono", serif;
+font-family: "Space Mono", monospace;
 font-weight: 400;
-font-style: normal;
+font-style: italic;
 width: 97%;
 text-align: center;
 margin-top: 6px;
 padding-bottom: 10px;
 }
 .my-documents__paragraph--title:hover {
-  color:gray;
+  color:#CCC5B9;
 }
 .my-documents {
-background-color:var(--orange);
+
 border-top-left-radius: 40px;
 border-bottom-right-radius: 10px;
 padding-bottom: 10px;
-color: black;
+color:#FFFCF2;
+
 }
 .my-documents__a {
-  color: black;
+  color:#FFFCF2;
   
 }
 a:hover {
@@ -244,7 +361,9 @@ a:hover {
 .my-documents__paragrapg--diplom {
   padding-left: 10px;
 }
-
+.my-documents__paragrapg--diplom:hover {
+  color: #CCC5B9;
+}
 
 .d-flex {
   display: flex;
@@ -261,19 +380,20 @@ a:hover {
 
 .footer {
   padding: 20px;
-  background-color: black;
+  background-color:#403D39;
   position: sticky;
 }
 .footer__icon {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   padding-left: 5px;
-  border-radius: 50%;
+  
+  color: #E07A5F;
 }
 .footer__icon:hover {
  width: 70px;
  height: 70px;
- color: gray;
+ color:var(--orange);
  
 }
 .footer a, .header__right-menu a{
@@ -285,4 +405,32 @@ a:hover {
     left:20%;
 }
 }
-
+.padding {
+  padding-left: 20px;
+  color:black
+}
+.padding1 {
+  padding-left: 54px;
+  color: black;
+}
+.aus {
+  padding-left: 63px;
+}
+.padding2 {
+  padding-left: 98px;
+}
+.padding3 {
+  padding-left: 109px;
+}
+.padding4 {
+  padding-left: 40px;
+}
+#info-box {
+  display: none;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
