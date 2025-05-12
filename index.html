@@ -10,79 +10,69 @@
       <script src="index.js" defer></script>
       <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-</head>
+   </head>
    <body>
-      <div class="header">
+    <!--header-->
+      <div class="header" id="home">
+        <!-- burgermenu -->
          <div class="header__hamburger-menu">
             <ul class="header__right-menu">
-               <li class="item"><a href="#">Home</a></li>
-               <li class="item"><a href="#">Personlichdaten</a></li>
-               <li class="item"><a href="#">Über mich</a></li>
-               <li class="item"><a href="#">Ausbildung</a></li>
+               <li class="item"><a href="#home">Home</a></li>
+               <li class="item"><a href="#personlich">Personlichdaten</a></li>
+               <li class="item"><a href="#read-more">Über mich</a></li>
+               <li class="item"><a href="#ausbildung">Ausbildung</a></li>
             </ul>
             <button class="hamburger">
             <i class="menuIcon  material-icons">menu</i>
             <i class="closeIcon  material-icons">close</i> 
             </button>
          </div>
-         <!--<div class="header__cv">Lebenslauf</div> -->
+           <!-- burgermenu -->
          <div class="container">
             <div class="d-flex flex-wrap gap-2">
                <p class="Lebenslauf">CV</p>
-               <img class="header__photo" src= "./fati copy.png" /> 
-               
+               <img class="header__photo" src="./fati copy.png" />
                <div class="header__info-paragraph--name">
-                  <p class="skils">Hallo,
-                     ich bin dabei ❤️ HTML, CSS, Javascript
-                  </p>
+                  <p class="skils">Hallo, ich bin dabei ❤️ HTML, CSS, Javascript</p>
                   <h1>
                      <span>Fateme</span>
                      Valinezhad
-                     
                   </h1>
                   <h2>Software Engineer</h2>
-                 <!-- <p class="header__info-paragraph--career"> Ich habe Software Engineering in Sanandaj, Kurdistan, studiert und interessiere</br>mich sehr für HTML, CSS und JavaScript
-                  </p>-->
                   <div class="main__my-info--">
-                     <button  class ="main__button--about-me" id="read-more">mehr information über mich</button>
+                     <button class="main__button--about-me" id="read-more">mehr information über mich</button>
                      <div class="menu d-flex flex-column gap-2">
                         <div class="info-box" id="info-box">
-                        <p class="main__more-info" id="more-info">Ich habe Software-Engineering </br>in Sanandaj, Kurdistan studiert und interessiere </br>mich sehr fur HTML, CSS und JavaScript.                     
-                           </br> Ich habe Software-Engineering </br>in Sanandaj, Kurdistan studiert und interessiere </br>mich sehr fur HTML, CSS und JavaScrip.
-                        </p>
-                     </div>
+                           <p class="main__more-info" id="more-info">Ich habe Software-Engineering in Sanandaj, Kurdistan studiert und interessiere mich sehr für HTML, CSS und JavaScript.</p>
+                           <details>
+                              <summary class="my-experience">Meine Berufserfahrung</summary>
+                              <p class="my-experience">Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                           </details>
+                        </div>
                      </div>
                   </div>
-               
-                  <!--<a class="info" href="mailto:valinezhadfatemeh@gmail.com">kontaktieren sie mich</a> -->
-                  
                </div>
             </div>
          </div>
       </div>
+      </div>
+      </div>
+      </div>
+      </div>
       <div class="container">
          <section class="main">
+          <!--leftmenu -->
             <div class="main__left-menu">
-               <span>PERSONLICHEDATEN</span>
-              
+               <span id="personlich">PERSONLICHEDATEN</span>
                <div class="main__my-info">
                   <div class="menu d-flex flex-column gap-2">
-                     <div><img class="main__icon"src="./gebur.svg"/> 26.April 1991</div>
-                     <div><img class="main__icon"src="./phone.svg"/> <a class="contact__me" href="tel:+41782629995">+4178/2629995</a></div>
-                     <div><img class="main__icon"src="./mail.svg"/><a class="contact__me" href="mailto:valinezhadfatemeh@gmail.com">valinezhadfatemeh@gmail.com</a></div>
-                     <div><img class="main__icon"src="./map.svg"/> Sihlweidstrasse 1, Zürich/8041</div>
-                     <!--<div><img class="main__icon"src=""/> Bewilligung: B (seit 21.03.19 in der Schweiz)</div> -->
+                     <div><img class="main__icon" src="./gebur.svg"/> 26.April 1991</div>
+                     <div><img class="main__icon" src="./phone.svg"/> <a class="contact__me" href="tel:+41782629995"> +4178/2629995</a></div>
+                     <div><img class="main__icon" src="./mail.svg"/><a class="contact__me" href="mailto:valinezhadfatemeh@gmail.com"> valinezhadfatemeh@gmail.com</a></div>
+                     <div><img class="main__icon" src="./map.svg"/> Sihlweidstrasse 1, Zürich/8041</div>
                   </div>
                </div>
-              <!-- <div class="main__my-info--drei">
-                  <button class ="main__button--about-me" id="read-more">mehr information über mich</button>
-                  <div class="menu d-flex flex-column gap-2">
-                     <p class="main__more-info" id="more-info">Ich habe Software-Engineering </br>in Sanandaj, Kurdistan studiert und interessiere </br>mich sehr fur HTML, CSS und JavaScript.                     
-                        </br> Ich habe Software-Engineering </br>in Sanandaj, Kurdistan studiert und interessiere </br>mich sehr fur HTML, CSS und JavaScrip.
-                     </p>
-                  </div>
-               </div>-->
+               <!-- my document -->
                <div class="my-documents" id="documents">
                   <p class="my-documents__paragraph--title">meine unterlagen</p>
                   <div>
@@ -91,6 +81,7 @@
                      <p class="my-documents__paragrapg--diplom">Meine <a class="my-documents__a" href="./Masterdiplom_Übersetzung copy.pdf">Masterdiplom und Übersetzung</a></p>
                   </div>
                </div>
+               <!-- API weather -->
                <div class="card">
                   <div class="search">
                      <input type="text" class="search-bar" placeholder="search">
@@ -98,49 +89,62 @@
                   </div>
                   <div class="weather">
                      <h5 class="city">Weather in Zurich</h5>
-                      <img src="" alt="" class="icon"/>
-                      <div class="temp"><img class="weather__img" src="./temp.png"/>40°C</div>
+                     <img src="" alt="" class="icon"/>
+                     <div class="temp"><img class="weather__img" src="./temp.png"/>40°C</div>
                      <div class="description"><img class="weather__img" src="./cloud.png"/>Cloudy</div>
                      <div class="humidity"><img class="weather__img" src="./Humidity.png">Humidity: 60%</div>
                      <div class="wind"><img class="weather__img" src="./wind-speed.png"/>Wind speed: 7.2 km/h</div>
                   </div>
                </div>
             </div>
+            <!-- RightMenu-->
             <div class="content">
-               <h3><img class="content__img" src="academic.svg">AUSBILDUNG </h3>
-               <div class="content__education-section">
-                  <ul>
-                     <li>2015 - 2018 <span class="padding">Masterstudium Informatik, Iran</span></li>
-                     <li>2013 - 2015  <span class="padding">Bachelorstudium Informatik, Iran</span></li>
-                     <li>2008 - 2013  <span class="padding">Informatikmittelschule, Iran</span></li>
-                     <li>2001 - 2008 <span class="padding"> Grundschule, Dehgolan Iran</span> </li>
-                  </ul>
+               <!-- Ausbildung -->
+               <div class="content__card" >
+                  <h3><img class="content__img" id="ausbildung" src="academic.svg">AUSBILDUNG</h3>
+                  <div class="content__education-section">
+                     <ul>
+                        <li>2015 - 2018 <span >Masterstudium Informatik, Iran</span></li>
+                        <li>2013 - 2015 <span >Bachelorstudium Informatik, Iran</span></li>
+                        <li>2008 - 2013 <span >Informatikmittelschule, Iran</span></li>
+                        <li>2001 - 2008 <span >Grundschule, Dehgolan Iran</span></li>
+                     </ul>
+                  </div>
                </div>
-               <div class="content__language-skills">
+               <!-- Sprachkenntnisse -->
+               <div class="content__card">
                   <h3><img class="content__img" src="./book.svg"/>SPRACHKENNTNISSE</h3>
-                  <ul>
-                     <li>Deutsch  <span class="padding1 aus">Niveau B2</span></li>
-                     <li>Kurdisch <span class="padding1">Muttersprache</span></li>
-                     <li>Englisch <span class="padding1">gute Kenntnisse</span></li>
-                     <li>Persisch <span class="padding1">sehr gute Kenntnisse</span></li>
-                  </ul>
+                  <div class="content__language-skills">
+                     <ul>
+                        <li>Deutsch <span>Niveau B2</span></li>
+                        <li>Kurdisch <span>Muttersprache</span></li>
+                        <li>Englisch <span>gute Kenntnisse</span></li>
+                        <li>Persisch <span>sehr gute Kenntnisse</span></li>
+                     </ul>
+                  </div>
                </div>
-               <div class="content__it-expertise">
+               <!-- IT-Fachkenntnisse -->
+               <div class="content__card">
                   <h3><img class="content__img" src="./computer.svg"/>IT-FACHKENNTNISSE</h3>
-                  <ul>
-                     <li>HTML<span class="padding2"> <span class= "content__it-expertise--span"></span> <span class= "content__it-expertise--span"></span> <span class= "content__it-expertise--span"></span> <span class= "content__it-expertise--span"></span> </span> <span class="content__it-expertise--span"></span></li></span>
-                     <li>CSS <span class="padding3"><span class= "content__it-expertise--span"></span> <span class= "content__it-expertise--span"></span> <span class= "content__it-expertise--span"></span> <span class= content__it-expertise--span-color></span> </span> <span class="content__it-expertise--span-color"></span></li></span>
-                     <li>JavaScript <span class="padding4"><span class= "content__it-expertise--span"></span> <span class= "content__it-expertise--span"></span> <span class= "content__it-expertise--span-color"></span> <span class="content__it-expertise--span-color"></span> </span> <span class="content__it-expertise--span-color"></span></li></span>
-                  </ul>
+                  <div class="content__it-expertise">
+                     <ul>
+                        <li>HTML<span> <span class="content__it-expertise--span"></span> <span class="content__it-expertise--span"></span> <span class="content__it-expertise--span"></span> <span class="content__it-expertise--span"></span> </span> <span class="content__it-expertise--span"></span></li>
+                        <li>CSS <span><span class="content__it-expertise--span"></span> <span class="content__it-expertise--span"></span> <span class="content__it-expertise--span"></span> <span class="content__it-expertise--span-color"></span> </span> <span class="content__it-expertise--span-color"></span></li>
+                        <li>JavaScript <span><span class="content__it-expertise--span"></span> <span class="content__it-expertise--span"></span> <span class="content__it-expertise--span-color"></span> <span class="content__it-expertise--span-color"></span> </span> <span class="content__it-expertise--span-color"></span></li>
+                     </ul>
+                  </div>
                </div>
             </div>
          </section>
       </div>
+      <!-- footer -->
       <div class="footer" id="footer">
          <div class="container">
-            <a href="mailto:valinezhadfatemeh@gmail.com"><img class="footer__icon" src="./email.svg"/></a>
-            <a href="https://github.com/valinezhad"><img class="footer__icon"src="./github.svg"/></a>
-            <a href="#"><img class="footer__icon"src="./linkedin.svg"/></a>
+            <div class="footer__social-icons">
+               <a href="mailto:valinezhadfatemeh@gmail.com"><img class="footer__icon" src="./email.svg"/></a>
+               <a href="https://github.com/valinezhad"><img class="footer__icon"src="./github.svg"/></a>
+               <a href="#"><img class="footer__icon"src="./linkedin.svg"/></a>
+            </div>
          </div>
       </div>
    </body>

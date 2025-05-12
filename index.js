@@ -10,6 +10,11 @@
     //}
 //}
 //buttonElement.addEventListener('click', () => {
+
+
+
+
+    
    //// showInfo(pElement);
 //})
 const buttonElement = document.getElementById('read-more'); // Der Button
