@@ -16,15 +16,19 @@ left:-13px;
   height: 25px;
   width: 25px;
   top:6px;
-  
- 
+  }
+  .button__card:hover{
+    color:#CCC5B9;
   }
   .weather {
     border-top-left-radius: 10px;
 font-family: "Space Mono", monospace;
   font-weight: 400;
   }
-  
+  .city:hover{
+    color:var(--orange);
+  }
+
   .temp {
     border-top-left-radius: 10px;
 font-family: "Space Mono", monospace;
@@ -32,18 +36,16 @@ font-family: "Space Mono", monospace;
   position: relative;
   bottom: 10px;
   }
-  .button__card:hover {
-    background-color: rgb(222, 215, 215);
+  .temp:hover{
+    color:var(--orange);
   }
   
   .card {
     margin-top:6px;
-    
     border-top: 1px solid var(--orange);
     padding-top: 20px;
     padding: 20px;
     padding-left: 10px;
-    
     background-color:#403D39;
     margin-bottom: 20px;
     color:white;
@@ -54,8 +56,16 @@ font-family: "Space Mono", monospace;
   .search {
     padding-left: 25%;
   }
+  
+
   .description, .humidity{
     padding-bottom: 8px;
+  }
+  .description:hover{
+    color:var(--orange);
+  }
+  .humidity:hover{
+    color:var(--orange);
   }
  input.search-bar  {
 border: none;
@@ -74,7 +84,9 @@ width:calc(100%-100px);
   top: 10px;
   padding-right: 8px;
  }
-
+.wind:hover{
+  color:var(--orange);
+}
 
 
 

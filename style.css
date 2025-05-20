@@ -33,6 +33,9 @@
   border: 1px solid #E07A5F;
   margin-top: 50px;
   margin-left: 50px;
+  @media (max-width: 600px) {
+    margin-left: 120px;
+}
 }
 .Lebenslauf {
   border: 1px solid #E07A5F;
@@ -46,6 +49,11 @@
   position: relative;
   top: 210px;
   left: 250px;
+  @media (max-width: 600px) {
+    left:318px;
+    z-index:-10;
+ 
+}
 }
 .header__info-paragraph--name {
   display: flex;
@@ -59,6 +67,9 @@
   font-style: normal;
   padding-left: 120px;
   margin-top: 30px;
+  @media (max-width: 600px) {
+    padding-left: 80px;
+}
 }
 h1 {
   font-family: "Space Mono", monospace;
@@ -70,6 +81,9 @@ h1 {
   display: inline-block;
   padding-bottom: 5px;
   border-bottom: 1px solid var(--orange);
+  @media (max-width: 600px) {
+    margin-left: 80px;
+}
 }
 
 h1 > span {
@@ -83,6 +97,10 @@ h2 {
   font-weight: 400;
   font-style: normal;
   padding-left: 120px;
+  @media (max-width: 600px) {
+    padding-left: 80px;
+}
+
 }
 .main__button--about-me {
   text-align: center;
@@ -97,6 +115,10 @@ h2 {
   position: relative;
   right: 90px;
   transition: background-color 0.3s ease;
+  @media (max-width: 600px) {
+    margin-left:34%;
+}
+
 }
 .main__button--about-me:hover {
   background-color: var(--orange);
@@ -139,7 +161,7 @@ h2 {
   margin-right: 10px;
   padding-left: 5px;
   position: relative;
-  top: 4px;
+  bottom: -2px;
 }
  .main__left-menu > span {
      padding: 3px;
@@ -153,6 +175,8 @@ h2 {
      font-size: 18px;
      display: block;
      margin-bottom: 20px;
+     
+    
 }
  .main__left-menu > span:hover {
      color:#CCC5B9;
@@ -308,12 +332,17 @@ h2 {
      transition: all 0.3s ease;
      margin: 0 10px;
 }
-/*right-menu*/
+
  .my-experience {
      color: #403D39;
      font-family: "Space Mono", monospace;
-     font-weight: 400;
+     font-weight: 700;
      font-style: normal;
+}
+.my-experience2{
+  font-family: "Space Mono", monospace;
+  font-weight:400;
+  font-style: normal;
 }
 
  .content__card {
@@ -363,6 +392,12 @@ h2 {
      color: var(--orange);
      position: absolute;
      left: 0;
+}
+
+.my-experience1{
+  font-family: "Space Mono", monospace;
+     font-weight: 700;
+     font-style: normal 
 }
 /* IT-Fachkenntnisse */
  .content__it-expertise--span {
