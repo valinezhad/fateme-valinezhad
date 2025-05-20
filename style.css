@@ -32,7 +32,7 @@
   border-radius: 100px;
   border: 1px solid #E07A5F;
   margin-top: 50px;
-  margin-left: 50px;
+  margin-left: 100px;
   @media (max-width: 600px) {
     margin-left: 120px;
 }
@@ -48,10 +48,10 @@
   font-size: medium;
   position: relative;
   top: 210px;
-  left: 250px;
+  left: 300px;
   @media (max-width: 600px) {
     left:318px;
-    z-index:-10;
+
  
 }
 }
@@ -107,7 +107,7 @@ h2 {
   border-radius: 10px;
   background-color: #403D39;
   border: 1px solid var(--orange);
-  margin-left: 37%;
+  margin-left:210px;
   padding: 6px;
   color: white;
   font-weight: bold;

@@ -34,7 +34,11 @@
     border-radius: 8px;
   }
   .header__right-menu li {
-    display: inline;
+    display: block;
+    font-size: 50px;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
     padding: 8px;
     color: #FFFCF2;
     @media (max-width: 600px) {
