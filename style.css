@@ -367,7 +367,7 @@ h2 {
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
      padding: 20px;
      margin-top: 10px;
-     margin-bottom: 20px;
+     margin-bottom: 10px;
      transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
  .content__card:hover {
