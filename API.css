@@ -7,9 +7,7 @@ padding-left: 10px;
 border-radius: 50%;
 position: relative;
 left:-13px;
-@media (max-width: 600px) {
-  right:15%;
-}
+
   }
   .button__card{
   border-radius:50px;
