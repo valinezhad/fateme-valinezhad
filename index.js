@@ -29,7 +29,7 @@ buttonElement.addEventListener('click', () => {
 });
 
 
-const menu = document.querySelector(".header__right-menu ");
+const menu = document.querySelector(".header__right-menu");
 const items = document.querySelectorAll(".item");
 const hamburger = document.querySelector(".hamburger");
 const menuIcon = document.querySelector(".menuIcon");
@@ -55,7 +55,7 @@ let weather = {
     apikey: "169ea1bcf7343a0cc211782e287a9b74",
     fetchweather: function (city) {
        fetch(
-        "http://api.openweathermap.org/data/2.5/weather?q=" 
+        "https://api.openweathermap.org/data/2.5/weather?q=" 
         + city 
         + "&units=metric&appid="
         + this.apikey
