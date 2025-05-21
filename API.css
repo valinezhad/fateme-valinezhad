@@ -9,11 +9,12 @@ padding: -10px;
 
   }
   .button__card{
-    border-radius: 50%;
+    border-radius: 18px;
   background-color:var(--florawhite);
   border: 1px solid var(--florawhite);
   position: relative;
   bottom: -2px;
+  width:calc(100%-100px)
 
   
  
