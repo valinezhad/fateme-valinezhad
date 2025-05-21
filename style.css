@@ -1,28 +1,37 @@
 @import url("burgermenu.css");
  @import url("API.css");
  :root {
-     --orange: #E07A5F ;
-     --gray: rgb(107, 106, 106);
-     --azure: rgb(240, 255, 255);
-     --lightgray:rgb(211, 211, 211);
+     --florawhite:rgb(255, 252, 242);
+     --timberwolf:rgb(204, 197, 185);
+     --blackolive:rgb(64, 61, 57);
+     --eerieblack:rgb(37, 36, 34);
+     --burntsienna:rgb(224, 122, 95);
 }
- body {
-     margin: auto;
-     background-color: #FFFCF2 
+
+
+body {
+  margin: auto;
+  background-color: var(--florawhite);
+
+  
+ 
+  
 }
  .container {
      margin: auto;
      max-width: 1200px;
      padding-inline: 1rem;
+    
 }
 
 /* Header */
 .header {
-  background-color: #403D39;
+  background-color: var(--blackolive);
   padding-bottom: 50px;
-  color: white;
-  border-bottom: 1px solid #E07A5F;
+  color: var(--florawhite);
+  border-bottom: 1px solid var(--burntsienna);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
 }
 
 /*header__inhalt*/
@@ -30,7 +39,7 @@
   width: 200px;
   height: 200px;
   border-radius: 100px;
-  border: 1px solid #E07A5F;
+  border: 1px solid var(--burntsienna);
   margin-top: 50px;
   margin-left: 100px;
   @media (max-width: 600px) {
@@ -38,12 +47,12 @@
 }
 }
 .Lebenslauf {
-  border: 1px solid #E07A5F;
+  border: 1px solid var(--burntsienna);
   height: 20px;
   width: 20px;
   border-radius: 50px;
-  background-color: #FFFCF2;
-  color: black;
+  background-color: var(--florawhite);
+  color: var(--eerieblack);
   padding: 5px;
   font-size: medium;
   position: relative;
@@ -80,17 +89,17 @@ h1 {
   margin-bottom: -2px;
   display: inline-block;
   padding-bottom: 5px;
-  border-bottom: 1px solid var(--orange);
+  border-bottom: 1px solid var(--burntsienna);
   @media (max-width: 600px) {
     margin-left: 80px;
 }
 }
 
 h1 > span {
-  color:var(--orange);
+  color:var(--burntsienna);
 }
 h1 > span:hover {
-  color:#CCC5B9;
+  color:var(--timberwolf);
 }
 h2 {
   font-family: "Space Mono", monospace;
@@ -105,11 +114,11 @@ h2 {
 .main__button--about-me {
   text-align: center;
   border-radius: 10px;
-  background-color: #403D39;
-  border: 1px solid var(--orange);
+  background-color:var(--blackolive);
+  border: 1px solid var(--burntsienna);
   margin-left:210px;
   padding: 6px;
-  color: white;
+  color:var(--florawhite);
   font-weight: bold;
   font-size: 13px;
   position: relative;
@@ -121,10 +130,10 @@ h2 {
 
 }
 .main__button--about-me:hover {
-  background-color: var(--orange);
+  background-color:var(--burntsienna);
 }
 .main__more-info {
-  color: #403D39;
+  color: var(--blackolive);
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -137,19 +146,20 @@ h2 {
 }
 #info-box {
   display: none;
-  border: 1px solid #ccc;
+  border: 1px solid var(--timberwolf);
   padding: 20px;
   margin-top: 10px;
-  background-color:#FFFCF2;
+  background-color:var(--florawhite);
   border-radius: 10px;
-  color:black;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  color:var(--eerieblack);
+  box-shadow: 0 4px 8px var(--eerieblack);
 }
 /*left-menu*/
  .main {
      display: flex;
      flex-direction:row;
      gap: 48px;
+    
      @media (max-width: 600px) {
          display: flex;
          flex-direction: column;
@@ -165,13 +175,13 @@ h2 {
 }
  .main__left-menu > span {
      padding: 3px;
-     margin-left: 30%;
+     margin-left: 28%;
      padding-top: 3px;
      font-family: "Space Mono", monospace;
      font-weight: 400;
      font-style: italic;
      padding-right: 20px;
-     color:white;
+     color:var(--florawhite);
      font-size: 18px;
      display: block;
      margin-bottom: 20px;
@@ -179,10 +189,10 @@ h2 {
     
 }
  .main__left-menu > span:hover {
-     color:#CCC5B9;
+     color:var(--timberwolf);
 }
  .main__left-menu {
-     background-color: #403D39;
+     background-color: var(--blackolive);
      font-family: "Space Mono", monospace;
      font-weight: 400;
      font-style: normal;
@@ -202,32 +212,32 @@ h2 {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  color: white;
+  color: var(--florawhite);
 }
  .main__my-info{
-     color:#FFFCF2;
+     color:var(--florawhite);
      border-top-left-radius: 10px;
      font-family: "Space Mono", monospace;
      font-weight: 400;
      font-style: normal;
      padding-bottom: 20px;
      padding-top: 20px;
-     border-bottom: 1px solid var(--orange);
+     border-bottom: 1px solid var(--burntsienna);
 }
  .main__my-info--zwei {
-     color: black;
+     color:var(--eerieblack);
      padding-bottom: 20px;
      padding-top: 20px;
 }
 
  .contact__me {
      text-decoration: none;
-     color: white;
+     color: var(--florawhite);
      transition: color 0.3s ease;
      
 }
 .contact__me:hover {
-  color: var(--orange);
+  color: var(--burntsienna);
 }
 
  li{
@@ -247,7 +257,7 @@ h2 {
      font-style: normal;
 }
  .my-documents__paragraph--title {
-     padding-left:13px ;
+     padding-left:9px ;
      font-family: "Space Mono", monospace;
      font-weight: 400;
      font-style: italic;
@@ -255,25 +265,24 @@ h2 {
      text-align: center;
      margin-top: 6px;
      padding-bottom: 10px;
-     color: white;
+     color: var(--florawhite);
      font-size: 18px;
      margin-bottom: 10px;
 }
  .my-documents__paragraph--title:hover {
-     color:#CCC5B9;
+     color:var(--timberwolf);
 }
  .my-documents {
-     border-top-left-radius: 40px;
-     border-bottom-right-radius: 10px;
+     
      padding-bottom: 10px;
-     color:#FFFCF2;
+     color:var(--florawhite);
      margin-top: 20px;
 }
 .my-documents__a:hover {
- color:var(--orange);
+ color:var(--burntsienna);
 }
  .my-documents__a {
-     color: white;
+     color: var(--florawhite);
      text-decoration: none;
      transition: color 0.3s ease;
 }
@@ -282,11 +291,11 @@ h2 {
      padding-left: 10px;
      font-family: "Space Mono", monospace;
      font-weight: 400;
-     color: white;
+     color: var(--florawhite);
      margin-bottom: 5px;
 }
  .my-documents__paragrapg--diplom:hover {
-     color: #CCC5B9;
+     color: var(--timberwolf);
 }
  .d-flex {
      display: flex;
@@ -303,21 +312,23 @@ h2 {
 /*footer*/
  .footer {
      padding: 40px 20px;
-     background-color: #403D39;
+     background-color: var(--blackolive);
      text-align: center;
-     border-top: 1px solid var(--orange);
+     border-top: 1px solid var(--burntsienna);
+    
 }
  .footer__icon:hover {
      width: 40px;
      height: 40px;
-     color: var(--orange);
+     color: var(--burntsienna);
      transform: translateY(-5px);
 }
  .footer__social-icons {
      display: flex;
      position: relative;
-     left:45%;
-     color: black;
+     left:0;
+     justify-content: center;
+     color:var(--eerieblack);
      padding-left: 25px;
      gap: 20px;
      padding-right:20%;
@@ -328,27 +339,27 @@ h2 {
  .footer__icon {
      width: 30px;
      height: 30px;
-     color: #E07A5F;
+     
      transition: all 0.3s ease;
      margin: 0 10px;
 }
 
  .my-experience {
-     color: #403D39;
+     color: var(--blackolive);
      font-family: "Space Mono", monospace;
      font-weight: 700;
      font-style: normal;
 }
-.my-experience2{
+.my-experience__paragraph{
   font-family: "Space Mono", monospace;
-  font-weight:400;
+  font-weight: 400;
   font-style: normal;
 }
 
  .content__card {
-     background-color: #FFFCF2;
+     background-color: var(--florawhite);
      border-radius: 10px;
-     width: 150%;
+     width: 100%;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
      padding: 20px;
      margin-bottom: 20px;
@@ -363,7 +374,7 @@ h2 {
      font-family: "Space Mono", monospace;
      font-weight: 700;
      font-size: 20px;
-     color: #403D39;
+     color: var(--blackolive);
      margin-bottom: 15px;
      display: flex;
      align-items: center;
@@ -379,7 +390,7 @@ h2 {
  .content__card li {
      font-family: "Space Mono", monospace;
      font-size: 16px;
-     color: #403D39;
+     color: var(--blackolive);
      margin-bottom: 10px;
      padding-left: 20px;
      position: relative;
@@ -389,26 +400,26 @@ h2 {
 }
  .content__card li::before {
      content: "•";
-     color: var(--orange);
+     color: var(--burntsienna);
      position: absolute;
      left: 0;
 }
 
-.my-experience1{
+.my-experience__span{
   font-family: "Space Mono", monospace;
      font-weight: 700;
      font-style: normal 
 }
 /* IT-Fachkenntnisse */
  .content__it-expertise--span {
-     background-color: var(--orange);
+     background-color: var(--burntsienna);
      height: 8px;
      width: 20px;
      display: inline-block;
      margin-right: 5px;
 }
  .content__it-expertise--span-color {
-     background-color: var(--lightgray);
+     background-color: var(--timberwolf);
      height: 8px;
      width: 20px;
      display: inline-block;
