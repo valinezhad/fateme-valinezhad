@@ -8,25 +8,18 @@
      --burntsienna:rgb(224, 122, 95);
 }
 * {
-  max-width: 100%; 
+  
   box-sizing: border-box; 
 }
 body {
   margin: auto;
   background-color: var(--florawhite);
-  padding: 0;
-  width: 100%;
-  height: 100%;
+ 
   
  
   
 }
-html{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
+
  .container {
      margin: auto;
      max-width: 1200px;
