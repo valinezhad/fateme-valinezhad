@@ -327,12 +327,11 @@ h2 {
      text-align: center;
      border-top: 1px solid var(--burntsienna);
      @media (max-width: 600px) {
-      .footer {
           padding: 20px 10px; /* Reduce padding on mobile */
           margin-bottom: 0; /* Ensure no margin at the bottom */
-      }   
+      }  
 }
- }
+ 
     
  .footer__icon:hover {
      width: 40px;
