@@ -75,9 +75,11 @@ body {
   left:370px;
   z-index: 10;
   
+  
 
   @media (max-width: 600px) {
     left:185px;
+    
   }
 }
 

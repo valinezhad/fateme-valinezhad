@@ -1,17 +1,20 @@
 /*Burgermenu styles*/
 .hamburger {
     position: fixed;
-    z-index: 100;
+    
     top:8px;
     right:4px;
     padding: 4px;
     border: var(--timberwolf) solid 1px;
     background:var(--burntsienna);
     cursor: pointer;
+z-index: 1000;
     @media (max-width: 600px) {
       margin-right: 5px;
       height: 50px;
       width: 50px;
+      
+      
   }
   }
   .hamburger> .closeIcon {
@@ -19,6 +22,9 @@
   }
   .hamburger:hover {
     background-color: var(--timberwolf);
+    @media (max-width: 600px) {
+      background-color: var(--timberwolf);
+  }
   }
   .header__right-menu {
     position: fixed;
@@ -30,9 +36,10 @@
     transform: translateY(-100%);
     list-style: none;
    background-color:var(--florawhite);
-    z-index: 1;
+   z-index: 1000;
     margin: 0;
     color:var(--florawhite);
+   
   }
   .header__right-menu a:hover {
     background-color:var(--burntsienna);
@@ -58,5 +65,5 @@
     color:var(--eerieblack);
     text-decoration: none;
   }
-
+ 
   
