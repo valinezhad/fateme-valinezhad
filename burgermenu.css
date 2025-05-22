@@ -1,7 +1,8 @@
 /*Burgermenu styles*/
 .hamburger {
     position: fixed;
-    
+    color: var(--eerieblack); 
+  
     top:8px;
     right:4px;
     padding: 4px;
@@ -22,6 +23,7 @@ z-index: 1000;
   }
   .hamburger:hover {
     background-color: var(--timberwolf);
+    color: var(--eerieblack);
     @media (max-width: 600px) {
       background-color: var(--timberwolf);
   }
@@ -44,6 +46,7 @@ z-index: 1000;
   .header__right-menu a:hover {
     background-color:var(--burntsienna);
     border-radius: 8px;
+    color: var(--eerieblack);
   }
   .header__right-menu li {
     display: block;
@@ -64,6 +67,7 @@ z-index: 1000;
   .header__right-menu a {
     color:var(--eerieblack);
     text-decoration: none;
+   
   }
  
   
