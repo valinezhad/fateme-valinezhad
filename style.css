@@ -191,6 +191,8 @@ h2 {
      @media (max-width: 600px) {
          display: flex;
          flex-direction: column;
+         flex-wrap: wrap-reverse;
+
     }
 
 }
