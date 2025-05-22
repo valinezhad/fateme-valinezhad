@@ -47,10 +47,11 @@ font-family: "Space Mono", monospace;
     margin-top:6px;
     border-top: 1px solid var(--burntsienna);
     padding-top: 20px;
+   
     padding: 20px;
     padding-left: 10px;
     background-color:var(--blackolive);
-    margin-bottom: 20px;
+   
     color:var(--florawhite);
     font-family: "Space Mono", monospace;
   font-weight: 400;
