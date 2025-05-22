@@ -8,6 +8,11 @@
     border: var(--timberwolf) solid 1px;
     background:var(--burntsienna);
     cursor: pointer;
+    @media (max-width: 600px) {
+      margin-right: 5px;
+      height: 50px;
+      width: 50px;
+  }
   }
   .hamburger> .closeIcon {
     display: none;

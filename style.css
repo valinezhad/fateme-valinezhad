@@ -55,7 +55,7 @@ body {
   position: relative;
   left: 65px;
   @media (max-width: 600px) {
-    margin-left:0;
+    margin-left:-18px;
     left:0;
 }
 
@@ -77,7 +77,7 @@ body {
   
 
   @media (max-width: 600px) {
-    left:200px;
+    left:185px;
   }
 }
 
@@ -150,7 +150,7 @@ h2 {
   top: 20px;
   transition: background-color 0.3s ease;
   @media (max-width: 600px) {
-    margin-left:15px;
+    margin-left:6px;
 }
 
 }
@@ -396,7 +396,14 @@ h2 {
      font-family: "Space Mono", monospace;
      font-weight: 700;
      font-style: normal;
-}
+     text-align: justify;
+    
+     @media (max-width: 600px) {
+      text-align: justify;
+    }
+    }
+
+
 .my-experience__paragraph{
   font-family: "Space Mono", monospace;
   font-weight: 400;
@@ -408,7 +415,9 @@ h2 {
      border-radius: 10px;
      width: 100%;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-     padding: 20px;
+     padding-bottom: 40px;
+     padding-left: 20px;
+     padding-right: 20px;
      margin-top: 20px;
      margin-bottom: 10px;
      transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -423,7 +432,7 @@ h2 {
      font-weight: 700;
      font-size: 20px;
      color: var(--blackolive);
-     margin-bottom: 15px;
+     
      display: flex;
      align-items: center;
 }
@@ -439,9 +448,10 @@ h2 {
      font-family: "Space Mono", monospace;
      font-size: 16px;
      color: var(--blackolive);
-     margin-bottom: 10px;
+    
      padding-left: 20px;
      position: relative;
+     
 
 
     
