@@ -14,8 +14,9 @@ padding: -10px;
   border: 1px solid var(--florawhite);
   position: relative;
   bottom: -2px;
-  width:calc(100%-100px)
-
+  width:calc(100%-100px);
+ 
+  
   
  
   
@@ -26,7 +27,7 @@ padding: -10px;
   .weather {
     
 font-family: "Space Mono", monospace;
-  font-weight: 400;
+  font-size: medium;
   }
   .city:hover{
     color:var(--burntsienna);
@@ -87,6 +88,7 @@ width:calc(100%-100px);
 
  .city {
  font-size: 15px;
+ margin-top: 20px;
  }
  .weather__img {
   width: 30px;

@@ -13,9 +13,7 @@
   margin: 0;
 }
 body {
-  
   background-color: var(--florawhite);
-  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -50,8 +48,10 @@ body {
   border: 1px solid var(--burntsienna);
   margin-top: 50px;
   margin-left: 100px;
+  position: relative;
+  left: 65px;
   @media (max-width: 600px) {
-    margin-left:-8px;
+    margin-left:-80px;
 }
 
 }
@@ -66,11 +66,15 @@ body {
   padding-left: 2.30px;
   font-size: medium;
   position: relative;
-  top: 205px;
+  top: 220px;
+  left:370px;
+  z-index: 10;
+  
 
-  left: 300px;
+
   @media (max-width: 600px) {
    left:190px;
+
 
  
 }
@@ -85,8 +89,9 @@ body {
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
-  padding-left: 120px;
-  margin-top: 30px;
+  padding-left: 200px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   @media (max-width: 600px) {
     padding-left:8px;
 }
@@ -96,7 +101,7 @@ h1 {
   font-weight: 700;
   font-style: normal;
   padding-left:0;
-  margin-left: 120px;
+  margin-left: 200px;
   margin-bottom: -2px;
   display: inline-block;
   padding-bottom: 5px;
@@ -116,7 +121,8 @@ h2 {
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
-  padding-left: 120px;
+  margin-top: 8px;
+  padding-left: 200px;
   @media (max-width: 600px) {
     padding-left:8px;
 }
@@ -133,10 +139,11 @@ h2 {
   font-weight: bold;
   font-size: 13px;
   position: relative;
-  right: 90px;
+  left:-8px;
+  top: 20px;
   transition: background-color 0.3s ease;
   @media (max-width: 600px) {
-    margin-left:95px;
+    margin-left:15px;
 }
 
 }
@@ -186,7 +193,7 @@ h2 {
   margin-right: 10px;
   padding-left: 5px;
   position: relative;
-  bottom: -2px;
+ 
 }
  .main__left-menu > span {
      padding: 3px;
@@ -214,7 +221,7 @@ h2 {
      border-radius: 10px;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
      padding: 20px;
-     margin-top: 10px;
+     margin-top: 20px;
    
      transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -228,14 +235,14 @@ h2 {
 .main__my-info .menu div {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: var(--florawhite);
 }
  .main__my-info{
      color:var(--florawhite);
      border-top-left-radius: 10px;
      font-family: "Space Mono", monospace;
-     font-weight: 400;
+     font-size: medium;
      font-style: normal;
      padding-bottom: 20px;
      padding-top: 20px;
@@ -307,9 +314,11 @@ h2 {
  .my-documents__paragrapg--diplom {
      padding-left: 10px;
      font-family: "Space Mono", monospace;
-     font-weight: 400;
+  font-size: medium;
+ 
+     font-style: normal;
      color: var(--florawhite);
-     margin-bottom: 5px;
+     margin-bottom: 15px;
 }
  .my-documents__paragrapg--diplom:hover {
      color: var(--timberwolf);
@@ -386,7 +395,7 @@ h2 {
      width: 100%;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
      padding: 20px;
-     margin-top: 10px;
+     margin-top: 20px;
      margin-bottom: 10px;
      transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
