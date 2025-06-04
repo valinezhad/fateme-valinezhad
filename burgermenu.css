@@ -41,6 +41,7 @@ z-index: 1000;
    z-index: 1000;
     margin: 0;
     color:var(--florawhite);
+    
    
   }
   .header__right-menu a:hover {
@@ -59,6 +60,7 @@ z-index: 1000;
     @media (max-width: 600px) {
         display: flex;
         flex-direction: column;
+       
    }
   }
   .showMenu {
@@ -69,5 +71,6 @@ z-index: 1000;
     text-decoration: none;
    
   }
+ 
  
   

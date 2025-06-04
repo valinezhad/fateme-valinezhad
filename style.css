@@ -17,9 +17,21 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+ 
+  
+}
   
 
+/*}
+html, body {
+  overflow-x: hidden;
+  
+}*/
+html, body {
+  scrollbar-width: none;
 }
+
+
 
 
  .container {
@@ -36,26 +48,32 @@ body {
 /* Header */
 .header {
   background-color: var(--blackolive);
-  padding-bottom: 50px;
+  padding-bottom: 90px;
+  
   color: var(--florawhite);
   border-bottom: 1px solid var(--burntsienna);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /*header__inhalt*/
+.header__photo-section {
+  position:relative;
+  left:218px;
+  @media (max-width: 600px) {
+    left:30px;
+}
+  
+}
+
 .header__photo {
   width: 200px;
   height: 200px;
   border-radius: 100px;
   border: 1px solid var(--burntsienna);
   margin-top: 50px;
-  margin-left: 100px;
-  position: relative;
-  left: 65px;
+
+ 
   @media (max-width: 600px) {
-    margin-left:-18px;
     left:0;
 }
 
@@ -70,15 +88,17 @@ body {
   padding-top: 5px;
   padding-left: 2.30px;
   font-size: medium;
-  position: relative;
-  top: 220px;
-  left:370px;
+ 
+  position: absolute;
+  left: 75%;
+  top:88%;
   z-index: 10;
   
   
 
   @media (max-width: 600px) {
-    left:185px;
+    left:154px;
+    
     
   }
 }
@@ -86,34 +106,45 @@ body {
 .header__info-paragraph--name {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
-  margin-top: 20px;
+  position: relative;
+  left:32%;
+  margin-top: 60px;
+  max-width: 90%;
+  line-height: 1.4;
+  @media (max-width: 600px) {
+    left:35px;
+    top:10px;
+   
+    
+    
+   
+    
+}
+  
+ 
 }
 .skils {
   font-family: "Space Mono", monospace;
   font-weight: 400;
-  font-style: normal;
-  padding-left: 200px;
-  margin-top: 40px;
+  
   margin-bottom: 20px;
+ font-size: 13px;
   @media (max-width: 600px) {
     padding-left:0;
+    font-size: 13px;
 }
 }
 h1 {
   font-family: "Space Mono", monospace;
   font-weight: 700;
   font-style: normal;
-  padding-left:0;
-  margin-left: 200px;
-  margin-bottom: -2px;
-  display: inline-block;
-  padding-bottom: 5px;
+  margin-bottom: 5px;
+  word-wrap: break-word;
   border-bottom: 1px solid var(--burntsienna);
   @media (max-width: 600px) {
-  
     margin-left: 0;
     padding-left: 0;
+    
 }
 }
 
@@ -127,14 +158,17 @@ h2 {
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
-  margin-top: 8px;
-  padding-left: 200px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-bottom: 20px;
+  white-space: normal;
   @media (max-width: 600px) {
-    padding-left:0px;
-   
-    
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin-left: 0;
+    padding-left: 0;
 }
-
+ 
 }
 .main__button--about-me {
   text-align: center;
@@ -146,12 +180,12 @@ h2 {
   color:var(--florawhite);
   font-weight: bold;
   font-size: 13px;
-  position: relative;
-  left:-8px;
-  top: 20px;
+  
+ position: absolute;
+ left:-205px;
   transition: background-color 0.3s ease;
   @media (max-width: 600px) {
-    margin-left:6px;
+   
 }
 
 }
@@ -163,6 +197,10 @@ h2 {
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
+
+
+
+
 }
 
  h3 {
@@ -173,12 +211,23 @@ h2 {
 #info-box {
   display: none;
   border: 1px solid var(--timberwolf);
+  width: 60%;
+  text-align: left;
   padding: 20px;
   margin-top: 10px;
   background-color:var(--florawhite);
   border-radius: 10px;
   color:var(--eerieblack);
   box-shadow: 0 4px 8px var(--eerieblack);
+  line-height: 1.6;
+  word-spacing: normal;
+  letter-spacing: normal;
+  white-space: normal;
+  @media (max-width: 600px) {
+   
+   width: 96%;
+   line-height: 1.6;
+  }
 }
 /*left-menu*/
  .main {
@@ -216,10 +265,7 @@ h2 {
      color:var(--florawhite);
      font-size: 18px;
      display: block;
-    /* margin-bottom: 20px;
-     @media (max-width: 600px) {
-      margin-left: 0;
-    }*/
+   
   }
      
     
