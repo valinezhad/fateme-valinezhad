@@ -56,11 +56,15 @@ z-index: 1000;
     font-weight: 400;
     font-style: normal;
     padding: 8px;
+    
+    
     color: var(--florawhite);
     @media (max-width: 600px) {
         display: flex;
         flex-direction: column;
-       
+        
+       padding-top: 50px;
+        text-align: center;
    }
   }
   .showMenu {
