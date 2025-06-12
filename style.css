@@ -21,9 +21,6 @@ body {
 html, body{
   overflow-x: hidden;
 }
-
-
-
 .container {
     margin: auto;
     max-width: 1200px;
@@ -35,6 +32,7 @@ html, body{
 
 .header {
     background-color: var(--blackolive);
+ 
     padding-bottom: 50px;
     display: flex; 
     position: relative;
@@ -42,35 +40,12 @@ html, body{
     border-bottom: 1px solid var(--burntsienna);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-/*.header::before {
-    content: '';
-    position: absolute;
-    top: 60px;
-    left: 60;
-    width: 100%;
-    height: 30%; 
-    background-color: var(--burntsienna);
-    opacity: 0.3; 
-    z-index: 0; 
-    pointer-events: none;
-}*/
-
 
 .header__photo-section {
     position: relative;
     margin-top: 50px;
     left: 130px;
-
-  
 }
-   
- 
-   
-    
-  
-
-
-  
 
 .header__photo {
     width: 150px;
@@ -90,7 +65,7 @@ html, body{
     }
    
   }
-.Lebenslauf {
+/*.Lebenslauf {
     border: 1px solid var(--burntsienna);
     height: 30px;
     width: 30px;
@@ -116,11 +91,8 @@ html, body{
     .Lebenslauf {
         left: 112px;
         top:63%;
-    }
-
-
-     
-  }
+    }  
+  }*/
 
 .header__info-paragraph--name {
     display: flex;
@@ -140,7 +112,6 @@ html, body{
     margin-bottom: 20px;
     font-size: 13px;
     text-align: start;
-   
 }
 h1 {
     font-family: "Space Mono", monospace;
@@ -149,7 +120,6 @@ h1 {
     margin-bottom: 5px;
     word-wrap: break-word;
     border-bottom: 1px solid var(--burntsienna);
-    
 }
 
 h1 > span {
@@ -222,10 +192,6 @@ h3 {
     }
 }
 
-
-
-
-/*left-menu*/
 .main {
     display: flex;
     flex-direction: row;
@@ -275,7 +241,7 @@ h3 {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-/* Persönliche Informationen */
+
 .main__my-info .menu div {
     display: flex;
     align-items: center;
@@ -511,7 +477,7 @@ li {
     font-weight: 700;
     font-style: normal;
 }
-/* IT-Fachkenntnisse */
+
 .content__it-expertise--span {
     background-color: var(--burntsienna);
     height: 8px;
