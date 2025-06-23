@@ -2,7 +2,6 @@
 .hamburger {
     position: fixed;
     color: var(--eerieblack); 
-  
     top:8px;
     right:4px;
     padding: 4px;
@@ -14,8 +13,6 @@ z-index: 1000;
       margin-right: 5px;
       height: 50px;
       width: 50px;
-      
-      
   }
   }
   .hamburger> .closeIcon {
@@ -41,8 +38,6 @@ z-index: 1000;
    z-index: 1000;
     margin: 0;
     color:var(--florawhite);
-    
-   
   }
   .header__right-menu a:hover {
     background-color:var(--burntsienna);
@@ -56,13 +51,10 @@ z-index: 1000;
     font-weight: 400;
     font-style: normal;
     padding: 8px;
-    
-    
     color: var(--florawhite);
     @media (max-width: 600px) {
         display: flex;
         flex-direction: column;
-        
        padding-top: 50px;
         text-align: center;
         font-size: 30px;

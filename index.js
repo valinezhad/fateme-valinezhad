@@ -17,18 +17,15 @@
     
    //// showInfo(pElement);
 //})
-const buttonElement = document.getElementById('read-more'); // Der Button
-const boxElement = document.getElementById('info-box'); // Die Info-Box
-
+const buttonElement = document.getElementById('read-more'); 
+const boxElement = document.getElementById('info-box'); 
 buttonElement.addEventListener('click', () => {
   if (boxElement.style.display !== 'block') {
-    boxElement.style.display = 'block'; // Zeige die Box
+    boxElement.style.display = 'block'; 
   } else {
-    boxElement.style.display = 'none'; // Verstecke die Box
+    boxElement.style.display = 'none'; 
   }
 });
-
-
 const menu = document.querySelector(".header__right-menu");
 const items = document.querySelectorAll(".item");
 const hamburger = document.querySelector(".hamburger");
