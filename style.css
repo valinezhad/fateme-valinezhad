@@ -443,10 +443,10 @@ li {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .language__skills-speas{
-    margin-left:45px;
+    margin-left:40px;
 }
 .language__skills{
-    margin-left:35px;
+    margin-left:30px;
 }
 .content__card:hover {
     transform: translateY(-5px);
@@ -500,13 +500,13 @@ li {
     margin-right: 5px;
 }
 .expertise__span3{
-    margin-left: 30px;
+    margin-left: 23px;
 }
 .expertise__span2{
-    margin-left: 90px;
+    margin-left: 83px;
 }
 .expertise__span1{
-    margin-left:90px ;
+    margin-left:83px ;
 }
 .content__it-expertise--span-color {
     background-color: var(--timberwolf);
