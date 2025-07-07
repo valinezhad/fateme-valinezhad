@@ -161,6 +161,7 @@ h2 {
     font-weight: 400;
     font-style: normal;
     letter-spacing: normal;
+
 }
 h3 {
     font-family: "Space Mono", monospace;
@@ -171,7 +172,7 @@ h3 {
 .info-box {
     display: none;
     border: 1px solid var(--timberwolf);
-    width: 200%; 
+    min-width:150%;
     text-align: left;
     padding: 20px;
     margin-top: 10px;
@@ -184,7 +185,7 @@ h3 {
     letter-spacing: normal;
     position: absolute;
     z-index: 1000;
-    left: 50%; 
+    left:75%; 
     transform: translateX(-50%); 
     overflow-y: auto; 
     max-height: 80vh; 
@@ -428,6 +429,7 @@ li {
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: normal;
+
 }
 
 .content__card {
